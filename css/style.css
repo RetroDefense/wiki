@@ -1,5 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 1px grey;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #737373;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #737373;
+}
+
 * {
     font-family: 'Lato', sans-serif;
     margin: 0;
@@ -20,6 +38,7 @@ body {
     width: 300px;
     height: auto;
     transition: transform ease-in-out 0.3s;
+    padding: 2px;
 }
 
 .noZoom {
@@ -35,14 +54,27 @@ body {
     text-decoration: none;
 }
 
-.footer {
-    position: fixed;
+footer {
     bottom: 0;
+    position: fixed;
     width: 100%;
-    height: 30px;
+}
+
+.footer
+{
+    background: #1c1c1c;
+    height: 25px;
+    margin: auto;
+    margin-bottom: 10px;
+    width: 400px;
     text-align: center;
-    background-color: #212121;
-    padding-top: 5px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.footer a {
+    text-align: center;
+    font-size: 18px;
 }
 
 .inner {
@@ -62,7 +94,7 @@ a {
 
 .inner h1 {
     font-weight: bold;
-    border-bottom: 1px solid #848484; 
+    border-bottom: 1px solid #848484;
     margin: 5px;
     overflow: hidden;
 }
@@ -108,8 +140,8 @@ a {
 }
 
 .back-btn {
-    background-color: #f1f1f1;
-    color: rgb(0, 0, 0);
+    background-color: #333333;
+    color: #ffff;
 }
 
 a.back-btn {
@@ -121,9 +153,32 @@ a.back-btn {
 }
 
 a.back-btn:hover {
-    background-color: #ddd;
+    background-color: #525252;
 }
 
 br {
     visibility: hidden;
+}
+
+.upgrade {
+    border: 2px solid;
+    border-radius: 5px;
+    padding: 10px;
+    width: 500px;
+    margin: 10px;
+}
+
+.upgradeTitle {
+    margin: 0 0 24px;
+}
+
+.upgradeIcon {
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    float: right;
+}
+
+.upgradeCost {
+    color: #8CD65E;
 }
