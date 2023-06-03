@@ -37,11 +37,11 @@ body {
 }
 
 .zoomA {
-    width: 300px;
-    height: auto;
     transition: transform ease-in-out 0.3s;
     margin-left: 5px;
     border-radius: 10px;
+    width: 300px;
+    height: auto;
 }
 
 .noZoom {
