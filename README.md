@@ -1,5 +1,7 @@
 # Retro Defense
 
-Link: https://retrodefense.github.io/wiki
+## Link to Wiki
+https://retrodefense.github.io/wiki
 
-Updated and maintained by coreyhsGames.
+## Play Retro Defense
+https://www.roblox.com/games/6947076261/Retro-Defense
