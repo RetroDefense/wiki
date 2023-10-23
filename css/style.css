@@ -30,10 +30,29 @@ body {
 
 .title {
     text-align: center;
-    margin-top: 5px;
-    margin-bottom: 5px;
+    margin: 10px 0 10px 0;
     font-size: 32px;
     border-bottom: 1px solid #848484;
+}
+
+nav {
+    overflow: hidden;
+    background-color: #333;
+    margin: 10px 0 10px 0;
+}
+
+nav a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.5s;
+    font-size: 18px;
+}
+
+nav a:hover {
+    background-color: #494949;
 }
 
 .zoomA {
@@ -100,7 +119,7 @@ a {
 .inner h1 {
     font-weight: bold;
     border-bottom: 1px solid #848484;
-    margin: 5px;
+    margin: 10px;
     overflow: hidden;
 }
 
@@ -142,23 +161,6 @@ a {
 
 .inner .desc {
     font-size: 20px;
-}
-
-.back-btn {
-    background-color: #333333;
-    color: #ffff;
-}
-
-a.back-btn {
-    text-decoration: none;
-    display: inline-block;
-    padding: 8px 16px;
-    margin-left: 10px;
-    margin-bottom: 10px;
-}
-
-a.back-btn:hover {
-    background-color: #525252;
 }
 
 br {
