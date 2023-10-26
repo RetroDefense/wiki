@@ -31,8 +31,9 @@ body {
 .title {
     text-align: center;
     margin: 10px 0 10px 0;
-    font-size: 32px;
+    font-size: 36px;
     border-bottom: 1px solid #848484;
+    font-weight: bold;
 }
 
 nav {
@@ -159,8 +160,16 @@ a {
     text-align: left;
 }
 
-.inner .desc {
+.infobox .infobox-header {
+    text-align: center;
+    font-size: 22px;
+    border-bottom: 1px solid #848484;
+    padding-top: 10px;
+}
+
+.desc {
     font-size: 20px;
+    margin-left: 10px;
 }
 
 br {
