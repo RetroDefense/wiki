@@ -1,0 +1,23 @@
+.games-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-items: center;
+    gap: 20px;
+}
+
+.game-card {
+    text-align: center;
+    text-decoration: none;
+    color: #0066cc;
+    font-size: 18px;
+}
+
+.game-card img {
+    border: #000 solid 1px;
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    margin-bottom: 10px;
+    background-color: rgba(0, 0, 0, 0.1);
+    pointer-events: none;
+}
