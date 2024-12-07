@@ -10,7 +10,7 @@ body {
 }
 
 header {
-    background-color: #f8f8f8;
+    background-color: #e3e3e3;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -50,7 +50,7 @@ nav ul {
     list-style: none;
     display: flex;
     justify-content: center;
-    background-color: #6d9bc4;
+    background-color: #0074bd;
     padding: 10px;
     margin: 0;
     color: white;
