@@ -1,0 +1,19 @@
+table,
+td,
+th {
+    border: #000 solid 1px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    background-color: #6d9bc4;
+    color: #fff;
+}
+
+tr:hover {
+    background-color: #bebebe;
+}

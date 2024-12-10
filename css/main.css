@@ -74,6 +74,10 @@ nav ul li a:hover {
     background-color: #4275a3;
 }
 
+nav ul li a.selected {
+    background-color: #4275a3;
+}
+
 main {
     display: flex;
     margin: 20px;
