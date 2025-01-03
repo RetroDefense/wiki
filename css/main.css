@@ -33,7 +33,7 @@ header .play-rd-btn {
     background-color: #f6ca54;
     border: #000 solid 2px;
     padding: 10px 20px;
-    font-size: 20px;
+    font-size: 1.25rem;
     cursor: pointer;
     font-weight: bold;
     border-radius: 5px;
@@ -55,11 +55,11 @@ nav ul {
     margin: 0;
     color: white;
     border: #000 solid 1px;
-    font-size: 20px;
+    font-size: 1.25rem;
 }
 
 nav ul li {
-    margin: 0 10px;
+    margin: 0;
 }
 
 nav ul li a {
@@ -86,7 +86,7 @@ main {
 aside {
     position: sticky;
     top: 0;
-    width: 300px;
+    max-width: 300px;
     height: fit-content;
     margin-right: 20px;
 }
@@ -111,10 +111,88 @@ section {
 
 section h1 {
     margin-top: 0;
-    font-size: 30px;
+    font-size: 1.875rem;
 }
 
 section h2 {
     margin-top: 0;
-    font-size: 24px;
+    font-size: 1.5rem;
+}
+
+@media (min-width: 0px) {
+    header .play-rd-container {
+        display: none;
+    }
+
+    nav ul li {
+        margin: 0;
+    }
+}
+
+@media (min-width: 300px) {
+    nav ul {
+        font-size: 0.4rem;
+    }
+
+    .game-card {
+        font-size: 0.8rem;
+    }
+}
+
+@media (min-width: 400px) {
+    nav ul {
+        font-size: 0.6rem;
+    }
+
+    .game-card {
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 500px) {
+    nav ul {
+        font-size: 0.8rem;
+    }
+}
+
+@media (min-width: 600px) {
+    nav ul {
+        font-size: 1rem;
+    }
+
+    header .play-rd-btn {
+        font-size: 0.75rem;
+    }
+
+    header .play-rd-container {
+        display: block;
+    }
+}
+
+@media (min-width: 800px) {
+    nav ul {
+        font-size: 1.1rem;
+    }
+
+    nav ul li {
+        margin: 0 5px;
+    }
+
+    header .play-rd-btn {
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    nav ul {
+        font-size: 1.25rem;
+    }
+
+    nav ul li {
+        margin: 0 10px;
+    }
+
+    header .play-rd-btn {
+        font-size: 1.25rem;
+    }
 }
