@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="../css/towers.css">
+    <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
+    <title>Towers - Retro Defense Wiki</title> 
+</head>
+<body>
+    <header>
+        <img src="../img/banner.png" alt="Retro Defense Banner" class="banner">
+        <div class="play-rd-container">
+            <a href="https://www.roblox.com/games/6947076261" target="_blank" class="play-rd-btn">Play Retro Defense ></a>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            |
+            <li><a href="../towers/towers.html" class="selected">Towers</a></li>
+            |
+            <li><a href="#">Enemies</a></li>
+            |
+            <li><a href="#">Maps</a></li>
+            |
+            <li><a href="#">Modes</a></li>
+            |
+            <li><a href="#">Modifiers</a></li>
+            |
+            <li><a href="../codes.html">Codes</a></li>
+            |
+            <li><a href="../updatelog.html">Update Log</a></li>
+        </ul>
+    </nav>
+    <main>
+        <aside>
+            <h3><a href="../towers/towers.html">Towers</a></h3>
+            <ul>
+                <li><a href="../towers/recruit.html">Recruit</a></li>
+                <li><a href="../towers/sharpshooter.html">Sharpshooter</a></li>
+                <li><a href="../towers/bomber.html">Bomber</a></li>
+                <li><a href="../towers/swordsman.html">Swordsman</a></li>
+                <li><a href="../towers/paintballer.html">Paintballer</a></li>
+                <li><a href="../towers/coder.html">Coder</a></li>
+                <li><a href="../towers/mortar.html">Mortar</a></li>
+                <li><a href="../towers/barracks.html">Barracks</a></li>
+                <li><a href="../towers/heavygunner.html">Heavy Gunner</a></li>
+            </ul>
+        </aside>
+        <section class="content">
+            <h1>Mortar</h1>
+            <p>Launches explosive shells with high splash radius and damage. Can ignite and stun enemies at max.</p>
+            <div class="tower-box">
+                <div class="tower-image-box">
+                    <img src="../img/favicon.png" alt="Mortar Icon" class="tower-icon">
+                    <div class="tower-cost-box">
+                        <p class="tower-cost">Cost: 2500</p>
+                    </div>
+                </div>
+                <div class="tower-description-box">
+                    <p>The Mortar is among the priciest towers in the game but compensates with powerful splash attacks and impressive range. Despite its strengths, it is hindered by several drawbacks, including placement restrictions limiting it to elevated areas, a slow attack speed, high cost, and an inability to detect Hidden units. While it excels at dealing massive area damage, its utility is heavily dependent on being paired with a 4-X Paintballer to address its lack of Hidden detection. Without this pairing, the Mortar struggles to justify its steep investment, making it a situational but impactful tower when used strategically.</p>
+                </div>
+            </div>
+            <h3>Upgrades</h3><hr>
+            <p>The top path significantly enhances the tower, offering the highest range and damage along with a burn effect that increases in both effectiveness and duration as it is upgraded. However, this path comes with notable drawbacks, particularly its slow attack speed and high cost, making it the most expensive upgrade for the tower. It also ranks as the third most expensive upgrade in the game, with only the Heavy Gunner's upgrades surpassing it in price. While it delivers powerful damage and utility, the high cost and slow attack speed make it a challenging investment that requires careful consideration.</p><br>
+            <p>The bottom path provides modest increases to damage and range, but its real strength lies in its upgrades to cooldown reduction and burst firing capabilities, allowing the tower to shoot three shots at a time in rapid succession. This burst mechanic acts as a valuable fix for the tower's slow attack speed, significantly improving its overall reliability. However, this improvement comes at the cost of some damage output, as the burst fire mechanics reduce the individual shot damage. Despite this trade-off, the bottom path proves to be a more consistent and dependable option for handling waves, especially when high attack speed is crucial.</p><br>
+            <div class="tabber">
+                <div class="tabs">
+                    <div class="tab active" data-tab="base-stats">Base Stats</div>
+                    <div class="tab" data-tab="top-path">Top Path</div>
+                    <div class="tab" data-tab="bottom-path">Bottom Path</div>
+                </div>
+                <div class="tab-content active" id="base-stats">
+                    <table>
+                        <colgroup>
+                            <col style="width: 25%;">
+                            <col style="width: 75%;">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th>Stat</th>
+                                <th>Value</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Base Cost</td>
+                                <td>$2000</td>
+                            </tr>
+                            <tr>
+                                <td>Base Damage</td>
+                                <td>50</td>
+                            </tr>
+                            <tr>
+                                <td>Base Cooldown</td>
+                                <td>6s</td>
+                            </tr>
+                            <tr>
+                                <td>Base Range</td>
+                                <td>20</td>
+                            </tr>
+                            <tr>
+                                <td>Splash Radius</td>
+                                <td>5</td>
+                            </tr>
+                            <tr>
+                                <td>Hidden Detection</td>
+                                <td>N/A</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="tab-content" id="top-path">
+                    <div class="upgrade">
+                        <img src="../img/favicon.png" alt="Mortar 1-X" class="upgrade-image">
+                        <div class="upgrade-details">
+                            <h4>Faster Hands</h4>
+                            <hr class="upgrade-divider">
+                            <p>
+                                <strong>Effect:</strong><br>
+                                • -0.3s Cooldown<br>• +2 Range<br>
+                            </p>
+                            <p><strong>Cost:</strong> $325</p>
+                        </div>
+                    </div>
+                    <div class="upgrade">
+                        <img src="../img/favicon.png" alt="Mortar 2-X" class="upgrade-image">
+                        <div class="upgrade-details">
+                            <h4>Bigger Shells</h4>
+                            <hr class="upgrade-divider">
+                            <p>
+                                <strong>Effect:</strong><br>
+                                • +30 Damage<br>• +3 Range<br>• +1 Splash Radius<br>
+                            </p>
+                            <p><strong>Cost:</strong> $1500</p>
+                        </div>
+                    </div>
+                    <div class="upgrade">
+                        <img src="../img/favicon.png" alt="Mortar 3-X" class="upgrade-image">
+                        <div class="upgrade-details">
+                            <h4>Flammable Shells</h4>
+                            <hr class="upgrade-divider">
+                            <p>
+                                <strong>Effect:</strong><br>
+                                • +80 Damage<br>• +0.1s Cooldown<br>• +4 Range<br>• +1 Splash Radius<br>• +Burn Effect<br>&emsp;○ Burns for 3s with 6dps. Effects do not stack.<br>
+                            </p>
+                            <p><strong>Cost:</strong> $5600</p>
+                        </div>
+                    </div>
+                    <div class="upgrade">
+                        <img src="../img/favicon.png" alt="Mortar 4-X" class="upgrade-image">
+                        <div class="upgrade-details">
+                            <h4>The Big One</h4>
+                            <hr class="upgrade-divider">
+                            <p>
+                                <strong>Effect:</strong><br>
+                                • +340 Damage<br>• +0.7s Cooldown<br>• +11 Range<br>• +3 Splash Radius<br>• +Burn Effect<br>&emsp;○ Burns for 8s with 15dps. Effects do not stack.<br>
+                            </p>
+                            <p><strong>Cost:</strong> $14500</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-content" id="bottom-path">
+                    <div class="upgrade">
+                        <img src="../img/favicon.png" alt="Mortar X-1" class="upgrade-image">
+                        <div class="upgrade-details">
+                            <h4>Longer Barrel</h4>
+                            <hr class="upgrade-divider">
+                            <p>
+                                <strong>Effect:</strong><br>
+                                • +5 Range<br>
+                            </p>
+                            <p><strong>Cost:</strong> $300</p>
+                        </div>
+                    </div>
+                    <div class="upgrade">
+                        <img src="../img/favicon.png" alt="Mortar X-2" class="upgrade-image">
+                        <div class="upgrade-details">
+                            <h4>Heavy Shells</h4>
+                            <hr class="upgrade-divider">
+                            <p>
+                                <strong>Effect:</strong><br>
+                                • +30 Damage<br>
+                            </p>
+                            <p><strong>Cost:</strong> $1000</p>
+                        </div>
+                    </div>
+                    <div class="upgrade">
+                        <img src="../img/favicon.png" alt="Mortar X-3" class="upgrade-image">
+                        <div class="upgrade-details">
+                            <h4>Dual Destroyers</h4>
+                            <hr class="upgrade-divider">
+                            <p>
+                                <strong>Effect:</strong><br>
+                                • +10 Damage<br>• -1s Cooldown<br>• +3 Range<br>• +Burst Fire<br>&emsp;○ Fires 3 shells per burst.<br>
+                            </p>
+                            <p><strong>Cost:</strong> $8100</p>
+                        </div>
+                    </div>
+                    <div class="upgrade">
+                        <img src="../img/favicon.png" alt="Mortar X-4" class="upgrade-image">
+                        <div class="upgrade-details">
+                            <h4>Make it Rain</h4>
+                            <hr class="upgrade-divider">
+                            <p>
+                                <strong>Effect:</strong><br>
+                                • +40 Damage<br>• -2s Cooldown<br>• +2 Range<br>• +1 Splash Radius<br>• +Burst Fire<br>&emsp;○ Fires 3 shells per burst.<br>
+                            </p>
+                            <p><strong>Cost:</strong> $10500</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br><h3>Stats Table</h3><hr>
+            <div class="tabber">
+                <div class="tabs">
+                    <div class="tab active" data-tab="tabber-top-path">Linear Path</div>
+                    <div class="tab" data-tab="tabber-bottom-path">Cross Path</div>
+                </div>
+                <div class="tab-content active" id="tabber-top-path">
+                    <div class="inner-tabs">
+                        <div class="inner-tab active" data-inner-tab="inner-top-path-1">Top Path</div>
+                        <div class="inner-tab" data-inner-tab="inner-top-path-2">Bottom Path</div>
+                    </div>
+                    <div class="inner-tab-content active" id="inner-top-path-1">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Level</th>
+                                    <th>Cost</th>
+                                    <th>Damage</th>
+                                    <th>Cooldown</th>
+                                    <th>Range</th>
+                                    <th>Splash Damage</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>0-0</td>
+                                    <td>$2000</td>
+                                    <td>50</td>
+                                    <td>6s</td>
+                                    <td>20</td>
+                                    <td>5</td>
+                                </tr>
+                                <tr>
+                                    <td>1-0</td>
+                                    <td>$2325</td>
+                                    <td>50</td>
+                                    <td>5.7s</td>
+                                    <td>22</td>
+                                    <td>5</td>
+                                </tr>
+                                <tr>
+                                    <td>2-0</td>
+                                    <td>$3825</td>
+                                    <td>80</td>
+                                    <td>5.7s</td>
+                                    <td>25</td>
+                                    <td>6</td>
+                                </tr>
+                                <tr>
+                                    <td>3-0</td>
+                                    <td>$9425</td>
+                                    <td>160</td>
+                                    <td>5.8s</td>
+                                    <td>29</td>
+                                    <td>7</td>
+                                </tr>
+                                <tr>
+                                    <td>4-0</td>
+                                    <td>$23925</td>
+                                    <td>420</td>
+                                    <td>6.5s</td>
+                                    <td>40</td>
+                                    <td>10</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="inner-tab-content" id="inner-top-path-2">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Level</th>
+                                    <th>Cost</th>
+                                    <th>Damage</th>
+                                    <th>Cooldown</th>
+                                    <th>Range</th>
+                                    <th>Splash Damage</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>0-0</td>
+                                    <td>$2000</td>
+                                    <td>50</td>
+                                    <td>6s</td>
+                                    <td>20</td>
+                                    <td>5</td>
+                                </tr>
+                                <tr>
+                                    <td>0-1</td>
+                                    <td>$2300</td>
+                                    <td>50</td>
+                                    <td>6s</td>
+                                    <td>25</td>
+                                    <td>5</td>
+                                </tr>
+                                <tr>
+                                    <td>0-2</td>
+                                    <td>$3300</td>
+                                    <td>80</td>
+                                    <td>6s</td>
+                                    <td>25</td>
+                                    <td>5</td>
+                                </tr>
+                                <tr>
+                                    <td>0-3</td>
+                                    <td>$11400</td>
+                                    <td>90</td>
+                                    <td>5s</td>
+                                    <td>28</td>
+                                    <td>5</td>
+                                </tr>
+                                <tr>
+                                    <td>0-4</td>
+                                    <td>$21900</td>
+                                    <td>130</td>
+                                    <td>3s</td>
+                                    <td>30</td>
+                                    <td>6</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="tab-content" id="tabber-bottom-path">
+                    <div class="inner-tabs">
+                        <div class="inner-tab active" data-inner-tab="inner-bottom-path-1">Top Path</div>
+                        <div class="inner-tab" data-inner-tab="inner-bottom-path-2">Bottom Path</div>
+                    </div>
+                    <div class="inner-tab-content active" id="inner-bottom-path-1">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Level</th>
+                                    <th>Cost</th>
+                                    <th>Damage</th>
+                                    <th>Cooldown</th>
+                                    <th>Range</th>
+                                    <th>Splash Damage</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>0-0</td>
+                                    <td>$2000</td>
+                                    <td>50</td>
+                                    <td>6s</td>
+                                    <td>20</td>
+                                    <td>5</td>
+                                </tr>
+                                <tr>
+                                    <td>1-1</td>
+                                    <td>$2625</td>
+                                    <td>50</td>
+                                    <td>5.7s</td>
+                                    <td>27</td>
+                                    <td>5</td>
+                                </tr>
+                                <tr>
+                                    <td>2-2</td>
+                                    <td>$5125</td>
+                                    <td>110</td>
+                                    <td>5.7s</td>
+                                    <td>30</td>
+                                    <td>6</td>
+                                </tr>
+                                <tr>
+                                    <td>3-2</td>
+                                    <td>$10725</td>
+                                    <td>190</td>
+                                    <td>5.8s</td>
+                                    <td>34</td>
+                                    <td>7</td>
+                                </tr>
+                                <tr>
+                                    <td>4-2</td>
+                                    <td>$25225</td>
+                                    <td>530</td>
+                                    <td>6.5s</td>
+                                    <td>45</td>
+                                    <td>10</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="inner-tab-content" id="inner-bottom-path-2">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Level</th>
+                                    <th>Cost</th>
+                                    <th>Damage</th>
+                                    <th>Cooldown</th>
+                                    <th>Range</th>
+                                    <th>Splash Damage</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>0-0</td>
+                                    <td>$2000</td>
+                                    <td>50</td>
+                                    <td>6s</td>
+                                    <td>20</td>
+                                    <td>5</td>
+                                </tr>
+                                <tr>
+                                    <td>1-1</td>
+                                    <td>$2625</td>
+                                    <td>50</td>
+                                    <td>5.7s</td>
+                                    <td>27</td>
+                                    <td>5</td>
+                                </tr>
+                                <tr>
+                                    <td>2-2</td>
+                                    <td>$5125</td>
+                                    <td>110</td>
+                                    <td>5.7s</td>
+                                    <td>30</td>
+                                    <td>6</td>
+                                </tr>
+                                <tr>
+                                    <td>2-3</td>
+                                    <td>$13225</td>
+                                    <td>120</td>
+                                    <td>4.7s</td>
+                                    <td>33</td>
+                                    <td>6</td>
+                                </tr>
+                                <tr>
+                                    <td>2-4</td>
+                                    <td>$23725</td>
+                                    <td>160</td>
+                                    <td>2.7s</td>
+                                    <td>35</td>
+                                    <td>7</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="../towers/towers.js"></script>
+</body>
+</html>
