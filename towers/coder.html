@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="../css/towers.css">
+    <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
+    <title>Towers - Retro Defense Wiki</title>
+</head>
+<body>
+    <header>
+        <img src="../img/banner.png" alt="Retro Defense Banner" class="banner">
+        <div class="play-rd-container">
+            <a href="https://www.roblox.com/games/6947076261" target="_blank" class="play-rd-btn">Play Retro Defense ></a>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            |
+            <li><a href="../towers/towers.html" class="selected">Towers</a></li>
+            |
+            <li><a href="#">Enemies</a></li>
+            |
+            <li><a href="#">Maps</a></li>
+            |
+            <li><a href="#">Modes</a></li>
+            |
+            <li><a href="#">Modifiers</a></li>
+            |
+            <li><a href="../codes.html">Codes</a></li>
+            |
+            <li><a href="../updatelog.html">Update Log</a></li>
+        </ul>
+    </nav>
+    <main>
+        <aside>
+            <h3><a href="../towers/towers.html">Towers</a></h3>
+            <ul>
+                <li><a href="../towers/recruit.html">Recruit</a></li>
+                <li><a href="../towers/sharpshooter.html">Sharpshooter</a></li>
+                <li><a href="../towers/bomber.html">Bomber</a></li>
+                <li><a href="../towers/swordsman.html">Swordsman</a></li>
+                <li><a href="../towers/paintballer.html">Paintballer</a></li>
+                <li><a href="../towers/coder.html">Coder</a></li>
+                <li><a href="../towers/mortar.html">Mortar</a></li>
+                <li><a href="../towers/barracks.html">Barracks</a></li>
+                <li><a href="../towers/heavygunner.html">Heavy Gunner</a></li>
+            </ul>
+        </aside>
+        <section class="content">
+            <h1>Coder</h1>
+            <p>Creates games and scripts to earn you money! Generates money.</p>
+            <div class="tower-box">
+                <div class="tower-image-box">
+                    <img src="../img/favicon.png" alt="Coder Icon" class="tower-icon">
+                    <div class="tower-cost-box">
+                        <p class="tower-cost">Cost: 2000</p>
+                    </div>
+                </div>
+                <div class="tower-description-box">
+                    <p>This tower serves a purely economic role, generating income at set intervals during a game. While its concept has potential, its current implementation falls short. The game's duration is too brief for the tower to recoup the significant investment it demands, making it an inefficient choice. Additionally, the game can be completed just as easily without the need for its income-generating abilities, leaving little incentive to include it in a strategy. As it stands, this tower is more of a novelty than a practical option for serious gameplay.</p>
+                </div>
+            </div>
+            <h3>Upgrades</h3><hr>
+            <p>The top path maximizes this tower's income-generating potential, offering the highest monetary return at a relatively affordable cost. Its efficiency in producing large amounts of income quickly makes it the premier choice for players looking to amass resources in the shortest time possible. This path is the go-to option for those prioritizing economic growth during gameplay.</p><br>
+            <p>The bottom path offers a mix of income generation and utility, allowing the tower to regenerate health for the base and, at the X-4 upgrade, provide a 10% discount to all towers within its range. However, this path struggles to justify its steep investment. The 10% discount is underwhelming and limited in scope, especially when compared to the financial benefits of simply placing another top-path Coder. Additionally, the health regeneration feature, while helpful in theory, is often unnecessary if the resources required to upgrade to a X-4 CODER are instead used to strengthen defenses. Ultimately, this path fails to compete with the more efficient and impactful top path, making it a suboptimal choice.</p><br>
+            <div class="tabber">
+                <div class="tabs">
+                    <div class="tab active" data-tab="base-stats">Base Stats</div>
+                    <div class="tab" data-tab="top-path">Top Path</div>
+                    <div class="tab" data-tab="bottom-path">Bottom Path</div>
+                </div>
+                <div class="tab-content active" id="base-stats">
+                    <table>
+                        <colgroup>
+                            <col style="width: 25%;">
+                            <col style="width: 75%;">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th>Stat</th>
+                                <th>Value</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Base Cost</td>
+                                <td>$500</td>
+                            </tr>
+                            <tr>
+                                <td>Base Income</td>
+                                <td>50</td>
+                            </tr>
+                            <tr>
+                                <td>Base Cooldown</td>
+                                <td>25s</td>
+                            </tr>
+                            <tr>
+                                <td>Base Range</td>
+                                <td>3</td>
+                            </tr>
+                            <tr>
+                                <td>Income Per Second (IPS)</td>
+                                <td>2</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="tab-content" id="top-path">
+                    <div class="upgrade">
+                        <img src="../img/favicon.png" alt="Coder 1-X" class="upgrade-image">
+                        <div class="upgrade-details">
+                            <h4>3D Modeling</h4>
+                            <hr class="upgrade-divider">
+                            <p>
+                                <strong>Effect:</strong><br>
+                                • +65 Income<br>
+                            </p>
+                            <p><strong>Cost:</strong> $600</p>
+                        </div>
+                    </div>
+                    <div class="upgrade">
+                        <img src="../img/favicon.png" alt="Coder 2-X" class="upgrade-image">
+                        <div class="upgrade-details">
+                            <h4>Headphones</h4>
+                            <hr class="upgrade-divider">
+                            <p>
+                                <strong>Effect:</strong><br>
+                                • +145 Income<br>
+                            </p>
+                            <p><strong>Cost:</strong> $1400</p>
+                        </div>
+                    </div>
+                    <div class="upgrade">
+                        <img src="../img/favicon.png" alt="Coder 3-X" class="upgrade-image">
+                        <div class="upgrade-details">
+                            <h4>Dual Monitors</h4>
+                            <hr class="upgrade-divider">
+                            <p>
+                                <strong>Effect:</strong><br>
+                                • +550 Income<br>• +5s Cooldown<br>
+                            </p>
+                            <p><strong>Cost:</strong> $3500</p>
+                        </div>
+                    </div>
+                    <div class="upgrade">
+                        <img src="../img/favicon.png" alt="Coder 4-X" class="upgrade-image">
+                        <div class="upgrade-details">
+                            <h4>Popular Developer</h4>
+                            <hr class="upgrade-divider">
+                            <p>
+                                <strong>Effect:</strong><br>
+                                • +2600 Income<br>• +30s Cooldown
+                            </p>
+                            <p><strong>Cost:</strong> $6500</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-content" id="bottom-path">
+                    <div class="upgrade">
+                        <img src="../img/favicon.png" alt="Coder X-1" class="upgrade-image">
+                        <div class="upgrade-details">
+                            <h4>Mouse</h4>
+                            <hr class="upgrade-divider">
+                            <p>
+                                <strong>Effect:</strong><br>
+                                • +25 Income<br>
+                            </p>
+                            <p><strong>Cost:</strong> $250</p>
+                        </div>
+                    </div>
+                    <div class="upgrade">
+                        <img src="../img/favicon.png" alt="Coder X-2" class="upgrade-image">
+                        <div class="upgrade-details">
+                            <h4>Keyboard</h4>
+                            <hr class="upgrade-divider">
+                            <p>
+                                <strong>Effect:</strong><br>
+                                • -5s Cooldown<br>
+                            </p>
+                            <p><strong>Cost:</strong> $1000</p>
+                        </div>
+                    </div>
+                    <div class="upgrade">
+                        <img src="../img/favicon.png" alt="Coder X-3" class="upgrade-image">
+                        <div class="upgrade-details">
+                            <h4>Hacker</h4>
+                            <hr class="upgrade-divider">
+                            <p>
+                                <strong>Effect:</strong><br>
+                                • +125 Income<br>• +Healing Passive<br>&emsp;○ Heals 1 HP to base per hack.<br>
+                            </p>
+                            <p><strong>Cost:</strong> $3300</p>
+                        </div>
+                    </div>
+                    <div class="upgrade">
+                        <img src="../img/favicon.png" alt="Coder X-4" class="upgrade-image">
+                        <div class="upgrade-details">
+                            <h4>Ultimate Hacker</h4>
+                            <hr class="upgrade-divider">
+                            <p>
+                                <strong>Effect:</strong><br>
+                                • +250 Income<br>• -3s Cooldown<br>• +Healing Passive<br>&emsp;○ Heals 3 HP to base per hack.<br>• +Discount Passive<br>&emsp;○ 10% discount on all upgrades in its range.
+                            </p>
+                            <p><strong>Cost:</strong> $12000</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br><h3>Stats Table</h3><hr>
+            <div class="tabber">
+                <div class="tabs">
+                    <div class="tab active" data-tab="tabber-top-path">Linear Path</div>
+                    <div class="tab" data-tab="tabber-bottom-path">Cross Path</div>
+                </div>
+                <div class="tab-content active" id="tabber-top-path">
+                    <div class="inner-tabs">
+                        <div class="inner-tab active" data-inner-tab="inner-top-path-1">Top Path</div>
+                        <div class="inner-tab" data-inner-tab="inner-top-path-2">Bottom Path</div>
+                    </div>
+                    <div class="inner-tab-content active" id="inner-top-path-1">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Level</th>
+                                    <th>Cost</th>
+                                    <th>Income</th>
+                                    <th>Cooldown</th>
+                                    <th>Range</th>
+                                    <th>IPS</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>0-0</td>
+                                    <td>$500</td>
+                                    <td>50</td>
+                                    <td>25s</td>
+                                    <td>3</td>
+                                    <td>2</td>
+                                </tr>
+                                <tr>
+                                    <td>1-0</td>
+                                    <td>$1100</td>
+                                    <td>115</td>
+                                    <td>25s</td>
+                                    <td>3</td>
+                                    <td>4.6</td>
+                                </tr>
+                                <tr>
+                                    <td>2-0</td>
+                                    <td>$2500</td>
+                                    <td>260</td>
+                                    <td>25s</td>
+                                    <td>3</td>
+                                    <td>10.4</td>
+                                </tr>
+                                <tr>
+                                    <td>3-0</td>
+                                    <td>$6000</td>
+                                    <td>810</td>
+                                    <td>30s</td>
+                                    <td>3</td>
+                                    <td>27</td>
+                                </tr>
+                                <tr>
+                                    <td>4-0</td>
+                                    <td>$12500</td>
+                                    <td>3410</td>
+                                    <td>60s</td>
+                                    <td>3</td>
+                                    <td>56.83</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="inner-tab-content" id="inner-top-path-2">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Level</th>
+                                    <th>Cost</th>
+                                    <th>Income</th>
+                                    <th>Cooldown</th>
+                                    <th>Range</th>
+                                    <th>IPS</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>0-0</td>
+                                    <td>$500</td>
+                                    <td>50</td>
+                                    <td>25s</td>
+                                    <td>3</td>
+                                    <td>2</td>
+                                </tr>
+                                <tr>
+                                    <td>0-1</td>
+                                    <td>$750</td>
+                                    <td>75</td>
+                                    <td>25s</td>
+                                    <td>3</td>
+                                    <td>3</td>
+                                </tr>
+                                <tr>
+                                    <td>0-2</td>
+                                    <td>$1750</td>
+                                    <td>75</td>
+                                    <td>20s</td>
+                                    <td>3</td>
+                                    <td>3.75</td>
+                                </tr>
+                                <tr>
+                                    <td>0-3</td>
+                                    <td>$5050</td>
+                                    <td>200</td>
+                                    <td>20s</td>
+                                    <td>3</td>
+                                    <td>10</td>
+                                </tr>
+                                <tr>
+                                    <td>0-4</td>
+                                    <td>$17050</td>
+                                    <td>450</td>
+                                    <td>17s</td>
+                                    <td>3</td>
+                                    <td>26.47</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="tab-content" id="tabber-bottom-path">
+                    <div class="inner-tabs">
+                        <div class="inner-tab active" data-inner-tab="inner-bottom-path-1">Top Path</div>
+                        <div class="inner-tab" data-inner-tab="inner-bottom-path-2">Bottom Path</div>
+                    </div>
+                    <div class="inner-tab-content active" id="inner-bottom-path-1">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Level</th>
+                                    <th>Cost</th>
+                                    <th>Income</th>
+                                    <th>Cooldown</th>
+                                    <th>Range</th>
+                                    <th>IPS</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>0-0</td>
+                                    <td>$500</td>
+                                    <td>50</td>
+                                    <td>25s</td>
+                                    <td>3</td>
+                                    <td>2</td>
+                                </tr>
+                                <tr>
+                                    <td>1-1</td>
+                                    <td>$1350</td>
+                                    <td>140</td>
+                                    <td>25s</td>
+                                    <td>3</td>
+                                    <td>5.6</td>
+                                </tr>
+                                <tr>
+                                    <td>2-2</td>
+                                    <td>$3750</td>
+                                    <td>285</td>
+                                    <td>20s</td>
+                                    <td>3</td>
+                                    <td>14.25</td>
+                                </tr>
+                                <tr>
+                                    <td>3-2</td>
+                                    <td>$7250</td>
+                                    <td>835</td>
+                                    <td>25s</td>
+                                    <td>3</td>
+                                    <td>33.4</td>
+                                </tr>
+                                <tr>
+                                    <td>4-2</td>
+                                    <td>$13750</td>
+                                    <td>3435</td>
+                                    <td>55s</td>
+                                    <td>3</td>
+                                    <td>62.45</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="inner-tab-content" id="inner-bottom-path-2">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Level</th>
+                                    <th>Cost</th>
+                                    <th>Income</th>
+                                    <th>Cooldown</th>
+                                    <th>Range</th>
+                                    <th>IPS</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>0-0</td>
+                                    <td>$500</td>
+                                    <td>50</td>
+                                    <td>25s</td>
+                                    <td>3</td>
+                                    <td>2</td>
+                                </tr>
+                                <tr>
+                                    <td>1-1</td>
+                                    <td>$1350</td>
+                                    <td>140</td>
+                                    <td>25s</td>
+                                    <td>3</td>
+                                    <td>5.6</td>
+                                </tr>
+                                <tr>
+                                    <td>2-2</td>
+                                    <td>$3750</td>
+                                    <td>285</td>
+                                    <td>20s</td>
+                                    <td>3</td>
+                                    <td>14.25</td>
+                                </tr>
+                                <tr>
+                                    <td>2-3</td>
+                                    <td>$7050</td>
+                                    <td>410</td>
+                                    <td>20s</td>
+                                    <td>3</td>
+                                    <td>20.5</td>
+                                </tr>
+                                <tr>
+                                    <td>2-4</td>
+                                    <td>$19050</td>
+                                    <td>660</td>
+                                    <td>17s</td>
+                                    <td>3</td>
+                                    <td>38.82</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <br><h3>Ability</h3><hr>
+            <div class="ability">
+                <div class="ability-box">
+                    <div class="ability-image-box">
+                        <img src="../img/favicon.png" alt="ABILITY NAME" class="ability-icon">
+                        <div class="ability-unlock-box">
+                            <p class="ability-unlock">Unlocked at:<br>X-3</p>
+                        </div>
+                    </div>
+                    <div class="ability-description-box">
+                        <p><strong>Heal Base:</strong><br>
+                        • Heals 1 HP to Base when towers cooldown triggers.<br><br>
+                        <strong>Ability Cooldown: </strong><br>Passive</p>
+                    </div>
+                </div>
+            </div>
+            <div class="ability">
+                <div class="ability-box">
+                    <div class="ability-image-box">
+                        <img src="../img/favicon.png" alt="ABILITY NAME" class="ability-icon">
+                        <div class="ability-unlock-box">
+                            <p class="ability-unlock">Unlocked at:<br>X-4</p>
+                        </div>
+                    </div>
+                    <div class="ability-description-box">
+                        <p><strong>Heal Base and Discount:</strong><br>
+                        • Heals 3 HP to Base when towers cooldown triggers.<br>
+                        • 10% Discount to all towers in range.<br><br>
+                        <strong>Ability Cooldown: </strong><br>Passive</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="../towers/towers.js"></script>
+</body>
+</html>

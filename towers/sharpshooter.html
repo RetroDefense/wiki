@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="../css/towers.css">
+    <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
+    <title>Towers - Retro Defense Wiki</title> 
+</head>
+<body>
+    <header>
+        <img src="../img/banner.png" alt="Retro Defense Banner" class="banner">
+        <div class="play-rd-container">
+            <a href="https://www.roblox.com/games/6947076261" target="_blank" class="play-rd-btn">Play Retro Defense ></a>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            |
+            <li><a href="../towers/towers.html" class="selected">Towers</a></li>
+            |
+            <li><a href="#">Enemies</a></li>
+            |
+            <li><a href="#">Maps</a></li>
+            |
+            <li><a href="#">Modes</a></li>
+            |
+            <li><a href="#">Modifiers</a></li>
+            |
+            <li><a href="../codes.html">Codes</a></li>
+            |
+            <li><a href="../updatelog.html">Update Log</a></li>
+        </ul>
+    </nav>
+    <main>
+        <aside>
+            <h3><a href="../towers/towers.html">Towers</a></h3>
+            <ul>
+                <li><a href="../towers/recruit.html">Recruit</a></li>
+                <li><a href="../towers/sharpshooter.html">Sharpshooter</a></li>
+                <li><a href="../towers/bomber.html">Bomber</a></li>
+                <li><a href="../towers/swordsman.html">Swordsman</a></li>
+                <li><a href="../towers/paintballer.html">Paintballer</a></li>
+                <li><a href="../towers/coder.html">Coder</a></li>
+                <li><a href="../towers/mortar.html">Mortar</a></li>
+                <li><a href="../towers/barracks.html">Barracks</a></li>
+                <li><a href="../towers/heavygunner.html">Heavy Gunner</a></li>
+            </ul>
+        </aside>
+        <section class="content">
+            <h1>Sharpshooter</h1>
+            <p>Shoots enemies from a distance, dealing high damage. A good starter tower.</p>
+            <div class="tower-box">
+                <div class="tower-image-box">
+                    <img src="../img/favicon.png" alt="Sharpshooter Icon" class="tower-icon">
+                    <div class="tower-cost-box">
+                        <p class="tower-cost">Cost: 500</p>
+                    </div>
+                </div>
+                <div class="tower-description-box">
+                    <p>This tower is a powerful and versatile option, boasting far-reaching attacks and innate hidden detection that make it a valuable asset in any loadout. Whether upgraded along the top or bottom path, it remains a reliable choice. However, its effectiveness comes with trade-offs, including a slow attack speed, placement restrictions limiting it to elevated areas of the map, and high costs for upgrades as the game progresses. Despite these challenges, its strengths shine, especially for new players looking for a dependable and impactful tower to anchor their strategy.</p>
+                </div>
+            </div>
+            <h3>Upgrades</h3><hr>
+            <p>The top path transforms the tower into a hard-hitting powerhouse, granting significantly higher damage per shot and a unique passive ability to deal double damage to boss units. While this sounds impressive, its practical use is limited, as boss units only appear in the final wave (or two with the buffed waves modifier enabled). Additionally, the higher cost of this crosspath makes it a less appealing investment, especially when compared to other towers that offer more consistent value for boss damage throughout a match. Ultimately, this path struggles to justify its price tag and situational effectiveness.</p><br>
+            <p>The bottom path enhances the tower with significantly increased range and attack speed, alongside a powerful ability that temporarily doubles its attack rate. This combination allows the tower to deliver more overall damage to targets compared to its top path, especially when its ability is used strategically. While it stands out as the more versatile option, this path also retains the capability to unleash a devastating burst of damage on high-priority threats, making it an adaptable and reliable choice for dealing with various challenges in a match.</p><br>
+            <div class="tabber">
+                <div class="tabs">
+                    <div class="tab active" data-tab="base-stats">Base Stats</div>
+                    <div class="tab" data-tab="top-path">Top Path</div>
+                    <div class="tab" data-tab="bottom-path">Bottom Path</div>
+                </div>
+                <div class="tab-content active" id="base-stats">
+                    <table>
+                        <colgroup>
+                            <col style="width: 25%;">
+                            <col style="width: 75%;">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th>Stat</th>
+                                <th>Value</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Base Cost</td>
+                                <td>$560</td>
+                            </tr>
+                            <tr>
+                                <td>Base Damage</td>
+                                <td>12</td>
+                            </tr>
+                            <tr>
+                                <td>Base Cooldown</td>
+                                <td>3.5s</td>
+                            </tr>
+                            <tr>
+                                <td>Base Range</td>
+                                <td>24</td>
+                            </tr>
+                            <tr>
+                                <td>Hidden Detection</td>
+                                <td>Level 2-X</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="tab-content" id="top-path">
+                    <div class="upgrade">
+                        <img src="../img/favicon.png" alt="Sharpshooter 1-X" class="upgrade-image">
+                        <div class="upgrade-details">
+                            <h4>Training</h4>
+                            <hr class="upgrade-divider">
+                            <p>
+                                <strong>Effect:</strong><br>
+                                • -0.25s Cooldown<br>
+                            </p>
+                            <p><strong>Cost:</strong> $250</p>
+                        </div>
+                    </div>
+                    <div class="upgrade">
+                        <img src="../img/favicon.png" alt="Sharpshooter 2-X" class="upgrade-image">
+                        <div class="upgrade-details">
+                            <h4>Communications</h4>
+                            <hr class="upgrade-divider">
+                            <p>
+                                <strong>Effect:</strong><br>
+                                • +4 Range<br>• +Hidden Detection<br>
+                            </p>
+                            <p><strong>Cost:</strong> $400</p>
+                        </div>
+                    </div>
+                    <div class="upgrade">
+                        <img src="../img/favicon.png" alt="Sharpshooter 3-X" class="upgrade-image">
+                        <div class="upgrade-details">
+                            <h4>Intervention</h4>
+                            <hr class="upgrade-divider">
+                            <p>
+                                <strong>Effect:</strong><br>
+                                • +30 Damage<br>• -0.5s Cooldown<br>• +2 Range<br>
+                            </p>
+                            <p><strong>Cost:</strong> $3000</p>
+                        </div>
+                    </div>
+                    <div class="upgrade">
+                        <img src="../img/favicon.png" alt="Sharpshooter 4-X" class="upgrade-image">
+                        <div class="upgrade-details">
+                            <h4>Boss Hunter</h4>
+                            <hr class="upgrade-divider">
+                            <p>
+                                <strong>Effect:</strong><br>
+                                • +133 Damage<br>• +5 Range<br>• +2x Damage to Bosses<br>
+                            </p>
+                            <p><strong>Cost:</strong> $12500</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-content" id="bottom-path">
+                    <div class="upgrade">
+                        <img src="../img/favicon.png" alt="Sharpshooter X-1" class="upgrade-image">
+                        <div class="upgrade-details">
+                            <h4>Stronger Bullets</h4>
+                            <hr class="upgrade-divider">
+                            <p>
+                                <strong>Effect:</strong><br>
+                                • +6 Damage<br>
+                            </p>
+                            <p><strong>Cost:</strong> $700</p>
+                        </div>
+                    </div>
+                    <div class="upgrade">
+                        <img src="../img/favicon.png" alt="Sharpshooter X-2" class="upgrade-image">
+                        <div class="upgrade-details">
+                            <h4>Even Stronger Bullets</h4>
+                            <hr class="upgrade-divider">
+                            <p>
+                                <strong>Effect:</strong><br>
+                                • +10 Damage<br>
+                            </p>
+                            <p><strong>Cost:</strong> $1200</p>
+                        </div>
+                    </div>
+                    <div class="upgrade">
+                        <img src="../img/favicon.png" alt="Sharpshooter X-3" class="upgrade-image">
+                        <div class="upgrade-details">
+                            <h4>Assault Sniper</h4>
+                            <hr class="upgrade-divider">
+                            <p>
+                                <strong>Effect:</strong><br>
+                                • +5 Damage<br>• -1.5s Cooldown<br>• +8 Range<br>
+                            </p>
+                            <p><strong>Cost:</strong> $2800</p>
+                        </div>
+                    </div>
+                    <div class="upgrade">
+                        <img src="../img/favicon.png" alt="Sharpshooter X-4" class="upgrade-image">
+                        <div class="upgrade-details">
+                            <h4>Snipe Master</h4>
+                            <hr class="upgrade-divider">
+                            <p>
+                                <strong>Effect:</strong><br>
+                                • +67 Damage<br>• +8 Range<br>• Ability: "Rapid Fire"<br>
+                            </p>
+                            <p><strong>Cost:</strong> $10200</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br><h3>Stats Table</h3><hr>
+            <div class="tabber">
+                <div class="tabs">
+                    <div class="tab active" data-tab="tabber-top-path">Linear Path</div>
+                    <div class="tab" data-tab="tabber-bottom-path">Cross Path</div>
+                </div>
+                <div class="tab-content active" id="tabber-top-path">
+                    <div class="inner-tabs">
+                        <div class="inner-tab active" data-inner-tab="inner-top-path-1">Top Path</div>
+                        <div class="inner-tab" data-inner-tab="inner-top-path-2">Bottom Path</div>
+                    </div>
+                    <div class="inner-tab-content active" id="inner-top-path-1">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Level</th>
+                                    <th>Cost</th>
+                                    <th>Damage</th>
+                                    <th>Cooldown</th>
+                                    <th>Range</th>
+                                    <th>Hidden Detection</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>0-0</td>
+                                    <td>$560</td>
+                                    <td>12</td>
+                                    <td>3.5s</td>
+                                    <td>24</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>1-0</td>
+                                    <td>$810</td>
+                                    <td>12</td>
+                                    <td>3.25s</td>
+                                    <td>24</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>2-0</td>
+                                    <td>$1210</td>
+                                    <td>12</td>
+                                    <td>3.25s</td>
+                                    <td>28</td>
+                                    <td>Yes</td>
+                                </tr>
+                                <tr>
+                                    <td>3-0</td>
+                                    <td>$4210</td>
+                                    <td>42</td>
+                                    <td>2.75s</td>
+                                    <td>30</td>
+                                    <td>Yes</td>
+                                </tr>
+                                <tr>
+                                    <td>4-0</td>
+                                    <td>$16710</td>
+                                    <td>175</td>
+                                    <td>2.75s</td>
+                                    <td>35</td>
+                                    <td>Yes</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="inner-tab-content" id="inner-top-path-2">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Level</th>
+                                    <th>Cost</th>
+                                    <th>Damage</th>
+                                    <th>Cooldown</th>
+                                    <th>Range</th>
+                                    <th>Hidden Detection</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>0-0</td>
+                                    <td>$560</td>
+                                    <td>12</td>
+                                    <td>3.5s</td>
+                                    <td>24</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>0-1</td>
+                                    <td>$1260</td>
+                                    <td>18</td>
+                                    <td>3.5s</td>
+                                    <td>24</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>0-2</td>
+                                    <td>$2460</td>
+                                    <td>28</td>
+                                    <td>3.5s</td>
+                                    <td>24</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>0-3</td>
+                                    <td>$5260</td>
+                                    <td>33</td>
+                                    <td>2s</td>
+                                    <td>32</td>
+                                    <td>N/A</td>
+                                </tr>
+                                <tr>
+                                    <td>0-4</td>
+                                    <td>$15460</td>
+                                    <td>100</td>
+                                    <td>2s</td>
+                                    <td>40</td>
+                                    <td>No</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="tab-content" id="tabber-bottom-path">
+                    <div class="inner-tabs">
+                        <div class="inner-tab active" data-inner-tab="inner-bottom-path-1">Top Path</div>
+                        <div class="inner-tab" data-inner-tab="inner-bottom-path-2">Bottom Path</div>
+                    </div>
+                    <div class="inner-tab-content active" id="inner-bottom-path-1">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Level</th>
+                                    <th>Cost</th>
+                                    <th>Damage</th>
+                                    <th>Cooldown</th>
+                                    <th>Range</th>
+                                    <th>Hidden Detection</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>0-0</td>
+                                    <td>$560</td>
+                                    <td>12</td>
+                                    <td>3.5s</td>
+                                    <td>24</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>1-1</td>
+                                    <td>$1510</td>
+                                    <td>18</td>
+                                    <td>3.25s</td>
+                                    <td>24</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>2-2</td>
+                                    <td>$3110</td>
+                                    <td>28</td>
+                                    <td>3.25s</td>
+                                    <td>28</td>
+                                    <td>Yes</td>
+                                </tr>
+                                <tr>
+                                    <td>3-2</td>
+                                    <td>$6110</td>
+                                    <td>58</td>
+                                    <td>2.75s</td>
+                                    <td>30</td>
+                                    <td>Yes</td>
+                                </tr>
+                                <tr>
+                                    <td>4-2</td>
+                                    <td>$18610</td>
+                                    <td>191</td>
+                                    <td>2.75s</td>
+                                    <td>35</td>
+                                    <td>Yes</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="inner-tab-content" id="inner-bottom-path-2">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Level</th>
+                                    <th>Cost</th>
+                                    <th>Damage</th>
+                                    <th>Cooldown</th>
+                                    <th>Range</th>
+                                    <th>Hidden Detection</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>0-0</td>
+                                    <td>$560</td>
+                                    <td>12</td>
+                                    <td>3.5s</td>
+                                    <td>24</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>1-1</td>
+                                    <td>$1510</td>
+                                    <td>18</td>
+                                    <td>3.25s</td>
+                                    <td>24</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>2-2</td>
+                                    <td>$3110</td>
+                                    <td>28</td>
+                                    <td>3.25s</td>
+                                    <td>28</td>
+                                    <td>Yes</td>
+                                </tr>
+                                <tr>
+                                    <td>2-3</td>
+                                    <td>$5910</td>
+                                    <td>33</td>
+                                    <td>1.75s</td>
+                                    <td>36</td>
+                                    <td>Yes</td>
+                                </tr>
+                                <tr>
+                                    <td>2-4</td>
+                                    <td>$16110</td>
+                                    <td>100</td>
+                                    <td>1.75s</td>
+                                    <td>44</td>
+                                    <td>Yes</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <br><h3>Ability</h3><hr>
+            <div class="ability">
+                <div class="ability-box">
+                    <div class="ability-image-box">
+                        <img src="../img/favicon.png" alt="Rapid Fire" class="ability-icon">
+                        <div class="ability-unlock-box">
+                            <p class="ability-unlock">Unlocked at:<br>4-X</p>
+                        </div>
+                    </div>
+                    <div class="ability-description-box">
+                        <p><strong>Rapid Fire:</strong><br>
+                        • -50% Cooldown<br>
+                        • Lasts for 8 seconds.<br><br>
+                        <strong>Ability Cooldown: </strong><br>40 Seconds</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="../towers/towers.js"></script>
+</body>
+</html>
