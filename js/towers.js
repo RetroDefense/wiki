@@ -2,7 +2,7 @@ document.querySelectorAll('.tabber').forEach(tabber => {
     const tabs = tabber.querySelectorAll('.tab');
     const tabContents = tabber.querySelectorAll('.tab-content');
     tabs.forEach(tab => {
-        tab.addEventListener('click', function() {
+        tab.addEventListener('click', function () {
             const targetTab = this.getAttribute('data-tab');
             tabs.forEach(tab => tab.classList.remove('active'));
             tabContents.forEach(content => content.classList.remove('active'));
@@ -21,17 +21,18 @@ document.querySelectorAll('.tabber').forEach(tabber => {
         });
     });
 });
-document.addEventListener("DOMContentLoaded", function() {
-const tables = document.querySelectorAll("table");
-tables.forEach(table => {
-    const rows = table.querySelectorAll("tr");
-    rows.forEach(row => {
-        const cells = row.querySelectorAll("td");
-        cells.forEach(cell => {
-            if (cell.textContent.trim() === "No" || cell.textContent.trim() === "N/A") { // Replaces "No" and "N/A" to N/A with grey text
-                cell.innerHTML = '<span style="color: grey;">N/A</span>';
-            }
+
+document.addEventListener("DOMContentLoaded", function () {
+    const tables = document.querySelectorAll("table");
+    tables.forEach(table => {
+        const rows = table.querySelectorAll("tr");
+        rows.forEach(row => {
+            const cells = row.querySelectorAll("td");
+            cells.forEach(cell => {
+                if (cell.textContent.trim() === "No" || cell.textContent.trim() === "N/A") { // Replaces "No" and "N/A" to N/A with grey text
+                    cell.innerHTML = '<span style="color: grey;">N/A</span>';
+                }
+            });
         });
     });
-});
 });
