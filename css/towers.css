@@ -59,12 +59,10 @@ colgroup col:last-child {
     width: 75%;
 }
 
-th,
-td {
+th, td {
     border: 1px solid #ddd;
     padding: 10px;
     text-align: center;
-    word-wrap: break-word;
 }
 
 th {
@@ -285,4 +283,64 @@ th {
 .ability-description-box {
     flex: 1;
     padding-left: 20px;
+}
+
+@media (max-width: 1024) {
+    table, th, td {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 950px) {
+    table, th, td {
+        font-size: 0.9rem; /* Adjust as needed */
+    }
+}
+
+@media (max-width: 860px) {
+    table, th, td {
+        font-size: 0.8rem; /* Adjust as needed */
+    }
+}
+
+@media (max-width: 750px) {
+    table, th, td {
+        font-size: 0.7rem; /* Adjust as needed */
+    }
+}
+
+@media (max-width: 650px) {
+    table, th, td {
+        font-size: 0.6rem; /* Adjust as needed */
+    }
+}
+
+@media (max-width: 600px) {
+    table, th, td {
+        font-size: 0.5rem; /* Adjust as needed */
+    }
+    .tower-icon {
+        width: 150px;
+    }
+    .tower-cost {
+    font-size: 0.7rem;
+    }
+}
+
+@media (max-width: 500px) {
+    table, th, td {
+        font-size: 0.4rem; /* Adjust as needed */
+    }
+    .tower-icon {
+        width: 100px;
+    }
+    .tower-cost {
+    font-size: 0.5rem;
+    }
+}
+
+@media (max-width: 400px) {
+    table, th, td {
+        font-size: 0.3rem; /* Adjust as needed */
+    }
 }
