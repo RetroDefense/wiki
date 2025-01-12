@@ -50,16 +50,20 @@ nav ul {
     list-style: none;
     display: flex;
     justify-content: center;
+    align-items: center;
     background-color: #6d9bc4;
     padding: 10px;
     margin: 0;
     color: white;
     border: #000 solid 1px;
     font-size: 1.25rem;
+    position: relative;
 }
 
 nav ul li {
     margin: 0;
+    display: flex;
+    align-items: center;
 }
 
 nav ul li a {
@@ -84,11 +88,18 @@ main {
 }
 
 aside {
-    position: sticky;
-    top: 0;
+    position: absolute;
+    top: 90;
+    left: 0;
     max-width: 300px;
     height: fit-content;
     margin-right: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    display: none;
+    background-color: rgb(180, 180, 180);
+    flex: 1;
+    z-index: 3;
 }
 
 aside h3 {
@@ -119,6 +130,25 @@ section h2 {
     font-size: 1.5rem;
 }
 
+.toggle-aside-btn {
+    background-color: #6d9bc4;
+    border: none;
+    color: white;
+    font-size: 1.25rem;
+    cursor: pointer;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+}
+
+.toggle-aside-btn:hover {
+    background-color: #4275a3;
+}
+
 @media (min-width: 0px) {
     header .play-rd-container {
         display: none;
@@ -126,6 +156,12 @@ section h2 {
 
     nav ul li {
         margin: 0;
+    }
+
+    .toggle-aside-btn {
+        width: 30px;
+        height: 30px;
+        font-size: 1rem;
     }
 }
 
@@ -137,6 +173,12 @@ section h2 {
     .game-card {
         font-size: 0.8rem;
     }
+
+    .toggle-aside-btn {
+        width: 35px;
+        height: 35px;
+        font-size: 1.1rem;
+    }
 }
 
 @media (min-width: 400px) {
@@ -147,11 +189,23 @@ section h2 {
     .game-card {
         font-size: 1rem;
     }
+
+    .toggle-aside-btn {
+        width: 35px;
+        height: 35px;
+        font-size: 1.1rem;
+    }
 }
 
 @media (min-width: 500px) {
     nav ul {
         font-size: 0.8rem;
+    }
+
+    .toggle-aside-btn {
+        width: 35px;
+        height: 35px;
+        font-size: 1.1rem;
     }
 }
 
@@ -167,6 +221,12 @@ section h2 {
     header .play-rd-container {
         display: block;
     }
+
+    .toggle-aside-btn {
+        width: 40px;
+        height: 40px;
+        font-size: 1.25rem;
+    }
 }
 
 @media (min-width: 800px) {
@@ -181,6 +241,12 @@ section h2 {
     header .play-rd-btn {
         font-size: 1rem;
     }
+
+    .toggle-aside-btn {
+        width: 40px;
+        height: 40px;
+        font-size: 1.25rem;
+    }
 }
 
 @media (min-width: 1024px) {
@@ -193,6 +259,12 @@ section h2 {
     }
 
     header .play-rd-btn {
+        font-size: 1.25rem;
+    }
+
+    .toggle-aside-btn {
+        width: 40px;
+        height: 40px;
         font-size: 1.25rem;
     }
 }
