@@ -90,16 +90,21 @@ main {
 aside {
     position: absolute;
     top: 90;
-    left: 0;
+    left: -300px;
     max-width: 300px;
     height: fit-content;
     margin-right: 20px;
     padding: 20px;
     border-radius: 10px;
-    display: none;
+    display: block;
     background-color: rgb(180, 180, 180);
     flex: 1;
     z-index: 3;
+    transition: left 0.5s ease;
+}
+
+aside.open {
+    left: 0;
 }
 
 aside h3 {
