@@ -11,10 +11,9 @@ ol {
 
 .tab {
     flex: 1;
-    padding: 10px 20px;
+    padding: 10px;
     border: 1px solid #ccc;
     background-color: #f1f1f1;
-    margin-right: 5px;
     border-radius: 5px 5px 0 0;
     text-align: center;
 }
@@ -34,7 +33,6 @@ ol {
     border-top: none;
     background-color: #f9f9f9;
     border-radius: 0 0 5px 5px;
-    padding: 10px;
     margin-bottom: 0;
 }
 
@@ -46,7 +44,6 @@ ol {
 table {
     width: 100%;
     border-collapse: collapse;
-    margin: 10px 0;
     table-layout: fixed;
     border-radius: 5px;
 }
@@ -59,12 +56,10 @@ colgroup col:last-child {
     width: 75%;
 }
 
-th,
-td {
+th, td {
     border: 1px solid #ddd;
     padding: 10px;
     text-align: center;
-    word-wrap: break-word;
 }
 
 th {
@@ -73,15 +68,13 @@ th {
 
 .inner-tabs {
     display: flex;
-    margin-top: 0px;
     cursor: pointer;
 }
 
 .inner-tab {
     flex: 1;
-    padding: 8px 16px;
+    padding: 8px;
     background-color: #f1f1f1;
-    margin-right: 5px;
     border: 1px solid #ccc;
     border-radius: 5px 5px 0 0;
     text-align: center;
@@ -102,7 +95,6 @@ th {
     border-top: none;
     background-color: #f9f9f9;
     border-radius: 0 0 5px 5px;
-    padding: 10px;
     margin-top: 0;
 }
 
@@ -111,7 +103,6 @@ th {
 }
 
 .tabber-container {
-    margin: 20px 0;
     border: 1px solid #ddd;
     border-radius: 5px;
     overflow: hidden;
@@ -126,7 +117,6 @@ th {
 
 .tabber-tabs .tab {
     flex: 1;
-    padding: 10px;
     text-align: center;
     background-color: #ccc;
     cursor: pointer;
@@ -285,4 +275,58 @@ th {
 .ability-description-box {
     flex: 1;
     padding-left: 20px;
+}
+
+@media (max-width: 1024) {
+    table, th, td {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 950px) {
+    table, th, td {
+        font-size: 1rem; /* Adjust as needed */
+    }
+}
+
+@media (max-width: 860px) {
+    table, th, td {
+        font-size: 0.9rem; /* Adjust as needed */
+    }
+}
+
+@media (max-width: 750px) {
+    table, th, td {
+        font-size: 0.8rem; /* Adjust as needed */
+    }
+}
+
+@media (max-width: 600px) {
+    table, th, td {
+        font-size: 0.7rem; /* Adjust as needed */
+    }
+    .tower-icon {
+        width: 150px;
+    }
+    .tower-cost {
+    font-size: 0.7rem;
+    }
+}
+
+@media (max-width: 500px) {
+    table, th, td {
+        font-size: 0.55rem; /* Adjust as needed */
+    }
+    .tower-icon {
+        width: 100px;
+    }
+    .tower-cost {
+    font-size: 0.5rem;
+    }
+}
+
+@media (max-width: 400px) {
+    table, th, td {
+        font-size: 0.45rem; /* Adjust as needed */
+    }
 }
