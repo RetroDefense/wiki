@@ -325,6 +325,12 @@ th {
     }
 }
 
+@media (max-width: 450px) {
+    .tower-description-box {
+        font-size: 0.7rem;
+    }
+}
+
 @media (max-width: 400px) {
     table, th, td {
         font-size: 0.45rem; /* Adjust as needed */
