@@ -15,6 +15,6 @@ How to create a pull request:
 2. Create a [separate branch](https://docs.github.com/en/desktop/contributing-and-collaborating-using-github-desktop/managing-branches) for your changes
 3. Make your changes, ensure that is properly formatted and works as intended (no errors).
 4. Provide comments if needed.
-5. Push your brancg and open a pull request.
+5. Push your branch and open a pull request.
 
 It may take some time for [coreyhsGames](https://github.com/coreyhsGames) to view and review your pull request, so please be patient. 🙂
