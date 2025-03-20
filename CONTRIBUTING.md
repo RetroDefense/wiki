@@ -17,4 +17,4 @@ How to create a pull request:
 4. Provide comments if needed.
 5. Push your brancg and open a pull request.
 
-It may take some time for [coreyhsGames](https://github.com/coreyhsGames) to view and review your pull request. So please be patient. 🙂
+It may take some time for [coreyhsGames](https://github.com/coreyhsGames) to view and review your pull request, so please be patient. 🙂
