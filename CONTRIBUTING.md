@@ -1,10 +1,10 @@
 # Contributing
 
-Thanks for showing interst in contributing to the [Retro Defense Wiki](https://github.com/RetroDefense/wiki)!
+Thanks for showing interest in contributing to the [Retro Defense Wiki](https://github.com/RetroDefense/wiki)!
 
 ## Discussing potential changes
 
-Before submitting a pull request, it is highly encouraged to discuss what changes you will be making to the wiki. This can either be done by creating an [issue](https://github.com/RetroDefense/wiki/issues/new/choose) or in the Offical Retro Defense Discord Server. This will help both us and you make sure the changes are aligned with the wiki's intentions and not wasting any time. 
+Before submitting a pull request, it is highly encouraged to discuss what changes you will be making to the wiki. This can either be done by creating an [issue](https://github.com/RetroDefense/wiki/issues/new/choose) or in the Official Retro Defense Discord Server. This will help both us and you make sure the changes are aligned with the wiki's intentions and not wasting any time. 
 
 Even if you are unsure, on what changes you want to do make, feel free to make an issue or discuss in the Discord server.
 
