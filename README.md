@@ -1,6 +1,6 @@
 # Retro Defense Wiki
 
-This is the official wiki for the popular tower defense game on Roblox, known as Retro Defense.
+This is the official wiki for the popular tower defense game on ROBLOX, known as Retro Defense.
 
 ## Play Retro Defense
 https://www.roblox.com/games/6947076261/Retro-Defense
