@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/enemies.css">
+    <link rel="stylesheet" href="../css/towers.css">
+    <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
+    <title>Retro Defense Wiki</title>
+</head>
+
+<body>
+    <header>
+        <img src="../img/banner.png" alt="Retro Defense Banner" class="banner">
+        <div class="play-rd-container">
+            <a href="https://www.roblox.com/games/6947076261" target="_blank" class="play-rd-btn">Play Retro Defense ></a>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            |
+            <li><a href="towers.html">Towers</a></li>
+            |
+            <li><a href="enemies.html" class="selected">Enemies</a></li>
+            |
+            <li><a href="#">Maps</a></li>
+            |
+            <li><a href="#">Modes</a></li>
+            |
+            <li><a href="#">Modifiers</a></li>
+            |
+            <li><a href="codes.html">Codes</a></li>
+            |
+            <li><a href="updatelog.html">Update Log</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section class="content">
+            <div class="tabber">
+                <div class="tabs">
+                    <div class="tab active" data-tab="Easy Mode">Easy Mode</div>
+                    <div class="tab" data-tab="Medium Mode">Medium Mode</div>
+                </div>
+                <div class="tab-content active" id="Easy Mode">
+                    <div class="games-grid">
+                        <div class="game-card" 
+                             data-description="Description for Rebel"
+                             data-health="8"
+                             data-speed="3.5"
+                             data-shield=""
+                             data-defense=""
+                             data-extra="">
+                            <img src="img/favicon.png" alt="Rebel">
+                            <h4>Rebel</h4>
+                        </div>
+                        <div class="game-card" 
+                             data-description="Description for Fast Rebel"
+                             data-health="6"
+                             data-speed="5.775"
+                             data-shield=""
+                             data-defense=""
+                             data-extra="">
+                            <img src="img/favicon.png" alt="Fast Rebel">
+                            <h4>Fast Rebel</h4>
+                        </div>
+                        <div class="game-card" 
+                             data-description="Description for Infected"
+                             data-health="25"
+                             data-speed="2.8"
+                             data-shield=""
+                             data-defense=""
+                             data-extra="">
+                            <img src="img/favicon.png" alt="Infected">
+                            <h4>Infected</h4>
+                        </div>
+                        <div class="game-card" 
+                             data-description="Description for Rebel Leader"
+                             data-health="100"
+                             data-speed="2"
+                             data-shield=""
+                             data-defense=""
+                             data-extra="">
+                            <img src="img/favicon.png" alt="Rebel Leader">
+                            <h4>Rebel Leader</h4>
+                        </div>
+                        <div class="game-card" 
+                             data-description="Description for Explosive Infected"
+                             data-health="20"
+                             data-speed="4.2"
+                             data-shield=""
+                             data-defense=""
+                             data-extra="On death, explode in a 10 stud radius and stun for 3 seconds.">
+                            <img src="img/favicon.png" alt="Explosive Infected">
+                            <h4>Explosive Infected</h4>
+                        </div>
+                        <div class="game-card"
+                             data-description="Description for Shielded Rebel"
+                             data-health="35"
+                             data-speed="3.2"
+                             data-shield="30"
+                             data-defense=""
+                             data-extra="">
+                            <img src="img/favicon.png" alt="Shielded Rebel">
+                            <h4>Shielded Rebel</h4>
+                        </div>
+                        <div class="game-card"
+                             data-description="Description for Infected Giant"
+                             data-health="650"
+                             data-speed="1.5"
+                             data-shield=""
+                             data-defense="25%"
+                             data-extra="">
+                            <img src="img/favicon.png" alt="Infected Giant">
+                            <h4>Infected Giant</h4>
+                        </div>
+                        <div class="game-card"
+                             data-description="Description for Inected Parent"
+                             data-health="150"
+                             data-speed="4"
+                             data-shield=""
+                             data-defense=""
+                             data-extra="Summons an Infected Child on death.">
+                            <img src="img/favicon.png" alt="Infected Parent">
+                            <h4>Infected Parent</h4>
+                        </div>
+                        <div class="game-card"
+                             data-description="Description for Infected Child"
+                             data-health="50"
+                             data-speed="6.5"
+                             data-shield=""
+                             data-defense=""
+                             data-extra="">
+                            <img src="img/favicon.png" alt="Infected Child">
+                            <h4>Infected Child</h4>
+                        </div>
+                        <div class="game-card"
+                             data-description="Description for Infected Recruit"
+                             data-health="300"
+                             data-speed="4.2"
+                             data-shield=""
+                             data-defense=""
+                             data-extra="">
+                            <img src="img/favicon.png" alt="Infected Recruit">
+                            <h4>Infected Recruit</h4>
+                        </div>
+                        <div class="game-card"
+                             data-description="Description for Necromancer"
+                             data-health="450"
+                             data-speed="1.7"
+                             data-shield=""
+                             data-defense=""
+                             data-extra="Summons enemies every 30 seconds. Cycles between 4 Undead, 2 Undead and 2 Fast Undead, and 5 Fast Undead.">
+                            <img src="img/favicon.png" alt="Necromancer">
+                            <h4>Necromancer</h4>
+                        </div>
+                        <div class="game-card"
+                             data-description="Description for Undead"
+                             data-health="10"
+                             data-speed="3.3"
+                             data-shield=""
+                             data-defense=""
+                             data-extra="">
+                            <img src="img/favicon.png" alt="Undead">
+                            <h4>Undead</h4>
+                        </div>
+                        <div class="game-card"
+                             data-description="Description for Fast Undead"
+                             data-health="8"
+                             data-speed="5.1"
+                             data-shield=""
+                             data-defense=""
+                             data-extra="">
+                            <img src="img/favicon.png" alt="Fast Undead">
+                            <h4>Fast Undead</h4>
+                        </div>
+                        <div class="game-card"
+                             data-description="Description for Worried Infected"
+                             data-health="100"
+                             data-speed="2.9*"
+                             data-shield=""
+                             data-defense=""
+                             data-extra="Enemy speed scales with lost health. ((Max Health - Health)0.25)+2.9">
+                            <img src="img/favicon.png" alt="Worried Infected">
+                            <h4>Worried Infected</h4>
+                        </div>
+                        <div class="game-card"
+                             data-description="Description for Hazmat Infected"
+                             data-health="2250"
+                             data-speed="2"
+                             data-shield=""
+                             data-defense="10%"
+                             data-extra="">
+                            <img src="img/favicon.png" alt="Hazmat Infected">
+                            <h4>Hazmat Infected</h4>
+                        </div>
+                        <div class="game-card"
+                             data-description="Description for Patient Zero"
+                             data-health="40000"
+                             data-speed="1"
+                             data-shield=""
+                             data-defense="25%"
+                             data-extra=" Does a Sword Smash 5 seconds after spawning. Loops the following: Wait 50s, Summon, Wait 50s, Calculated Infection, Wait 50s, Sword Smash.<br>Sword Smash: Smashes sword into ground stunning enemies in a 20 stud radius for 8s.<br>Calculated Infection: Stuns the highest DPS tower in a 30 stud radius for 15s.<br>Summon: Cycles between 2 Hazmat Infected, 4 Shielded Rebels and 3 Worried Infected, and 3 Infected Giants and 1 Necromancer.">
+                            <img src="img/favicon.png" alt="Patient Zero">
+                            <h4>Patient Zero</h4>
+                        </div>
+                    </div>
+                    <div id="enemy-details" class="hidden">
+                        <img id="enemy-image" src="" alt="Enemy Image">
+                        <div id="enemy-description"></div>
+                        <div id="enemy-stats" class="stats-box hidden">
+                            <div class="stat" id="stat-health">Health: <span></span></div>
+                            <div class="stat" id="stat-speed">Speed: <span></span></div>
+                            <div class="stat" id="stat-shield">Shield: <span></span></div>
+                            <div class="stat" id="stat-defense">Defense: <span></span></div>
+                            <div class="stat" id="stat-extra">Extra Info: <span></span></div>
+                        </div>
+                        <button id="close-details">Close</button>
+                    </div>
+                </div>
+                <div class="tab-content" id="Medium Mode"> Coming SOON  
+                    <div class="games-grid"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="./js/main.js"></script>
+    <script src="./js/enemies.js"></script>
+    <script src="./js/towers.js"></script>
+</body>
+</html>
