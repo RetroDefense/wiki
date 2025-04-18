@@ -8,6 +8,10 @@ Before submitting a pull request, it is highly encouraged to discuss what change
 
 Even if you are unsure, on what changes you want to do make, feel free to make an issue or discuss in the Discord server.
 
+A YouTube Tutorial by [sponkywonky](https://github.com/sponkywonky) provides an in-depth guide on contributing to the wiki using two different methods.
+<br>
+**Video: https://youtu.be/j2jCPgMnSxU**
+
 ## Making changes
 
 How to create a pull request:
