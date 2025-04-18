@@ -32,7 +32,11 @@ document.addEventListener("DOMContentLoaded", () => {
                 description = description.replace(/<br>/g, "<br>")
                                          .replace(/<h([1-6])>/g, "<h$1>")
                                          .replace(/<\/h([1-6])>/g, "</h$1>")
-                                         .replace(/<hr>/g, "<hr>");
+                                         .replace(/<hr>/g, "<hr>")
+                                         .replace(/<ul>/g, "<ul>")
+                                         .replace(/<\/ul>/g, "</ul>")
+                                         .replace(/<li>/g, "<li>")
+                                         .replace(/<\/li>/g, "</li>");
             }
 
             enemyImage.src = imgSrc;
