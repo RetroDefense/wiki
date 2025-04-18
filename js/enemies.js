@@ -29,7 +29,10 @@ document.addEventListener("DOMContentLoaded", () => {
             };
 
             if (description) {
-                description = description.replace(/<br>/g, "<br>");
+                description = description.replace(/<br>/g, "<br>")
+                                         .replace(/<h([1-6])>/g, "<h$1>")
+                                         .replace(/<\/h([1-6])>/g, "</h$1>")
+                                         .replace(/<hr>/g, "<hr>");
             }
 
             enemyImage.src = imgSrc;
