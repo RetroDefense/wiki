@@ -207,3 +207,13 @@
     font-size: 0.875rem;
     cursor: pointer;
 }
+
+ul {
+    list-style-type: disc !important;
+    margin-left: 10px;
+    padding-left: 10px;
+}
+
+li {
+    margin-bottom: 5px;
+}
