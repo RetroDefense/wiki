@@ -9,6 +9,7 @@
     text-decoration: none;
     color: #0066cc;
     font-size: 1.125rem;
+    cursor: pointer;
 }
 
 .game-card img {
