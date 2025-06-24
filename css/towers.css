@@ -36,6 +36,28 @@ ol {
     margin-bottom: 0;
 }
 
+.tab-content ul,
+.tab-content ol,
+.upgrade-details ul,
+.upgrade-details ol {
+    list-style: disc inside;
+    margin-left: 0.5em;
+    padding-left: 0;
+}
+
+.tab-content ul ul,
+.upgrade-details ul ul {
+    list-style: circle inside;
+    margin-left: 1em;
+}
+
+.tab-content li,
+.upgrade-details li {
+    display: list-item;
+    margin-left: 0;
+    padding-left: 0;
+}
+
 .tab-content.active {
     display: block;
     padding-bottom: 0;
