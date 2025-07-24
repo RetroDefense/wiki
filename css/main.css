@@ -154,6 +154,92 @@ section h2 {
     background-color: #4275a3;
 }
 
+.theme-switch-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position:absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 20px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 14px;
+    width: 14px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: #2196F3;
+}
+
+input:checked + .slider:before {
+    transform: translateX(20px);
+}
+
+body.dark-theme { 
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+header.dark-theme {
+    background-color: #1e1e1e;
+    border-color: #333;
+}
+
+nav.dark-theme ul {
+    background-color: #333;
+    border-color: #444;
+}
+
+nav.dark-theme ul li a:hover, nav.dark-theme ul li a.selected {
+    background-color: #555;
+}
+
+aside.dark-theme {
+    background-color: #1e1e1e;
+}
+
+section.dark-theme {
+    background-color: #1e1e1e;
+} /*start here*/
+
+body.dark-theme .toggle-aside-btn {
+    background-color: #333;
+}
+
+body.dark-theme .toggle-aside-btn:hover {
+    background-color: #555;
+}
+
 @media (min-width: 0px) {
     header .play-rd-container {
         display: none;
