@@ -1,7 +1,7 @@
 .games-grid {
     display: grid;
     justify-items: center;
-    margin-bottom: 10px;
+    gap: 15px;
 }
 
 .game-card {
@@ -10,6 +10,12 @@
     color: #0066cc;
     font-size: 1.125rem;
     cursor: pointer;
+    background-color: #f9f9f9;
+    transition: transform 150ms ease;
+}
+
+.game-card:hover {
+    transform: scale(1.2);
 }
 
 .game-card img {

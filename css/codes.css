@@ -14,6 +14,11 @@ th {
     color: #fff;
 }
 
+tr {
+    background-color: #ffff;
+    transition: background-color 200ms ease;
+}
+
 tr:hover {
-    background-color: #bebebe;
+    background-color: #FFFFE0;
 }
