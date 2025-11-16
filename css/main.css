@@ -97,7 +97,8 @@ aside {
     padding: 20px;
     border-radius: 10px;
     display: block;
-    background-color: rgb(180, 180, 180);
+    background-color: #6d9bc4;
+    color: white;
     flex: 1;
     z-index: 3;
     transition: left 0.5s ease;
@@ -109,6 +110,7 @@ aside.open {
 
 aside h3 {
     margin-top: 0;
+    color: white;
 }
 
 aside ul {
@@ -118,7 +120,48 @@ aside ul {
 
 aside ul li a {
     text-decoration: none;
-    color: #0066cc;
+    color: #ffffff;
+    transition: color 0.3s ease;
+}
+
+aside ul li a:hover {
+    color: #e0e0e0;
+}
+
+body.dark-theme aside ul li a {
+    color: #e0e0e0;
+}
+
+body.dark-theme aside ul li a:hover {
+    color: #ffffff;
+}
+
+/* Aside meta / recent panel styling */
+.aside-meta {
+    margin-top: 12px;
+}
+.aside-meta .meta-list {
+    list-style: none;
+    padding: 0;
+    margin: 6px 0;
+}
+.aside-meta .meta-list li {
+    margin-bottom: 8px;
+    font-size: 0.95rem;
+}
+.aside-meta .meta-list li a {
+    color: rgba(255,255,255,0.95);
+    text-decoration: none;
+}
+.aside-meta .meta-note {
+    font-size: 0.85rem;
+    color: rgba(255,255,255,0.85);
+    margin-top: 8px;
+}
+.aside-footer {
+    margin-top: 12px;
+    font-size: 0.8rem;
+    color: rgba(255,255,255,0.85);
 }
 
 section {
@@ -152,6 +195,96 @@ section h2 {
 
 .toggle-aside-btn:hover {
     background-color: #4275a3;
+}
+
+.theme-switch-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position:absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 20px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 14px;
+    width: 14px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: #2196F3;
+}
+
+input:checked + .slider:before {
+    transform: translateX(20px);
+}
+
+body.dark-theme { 
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+header.dark-theme {
+    background-color: #1e1e1e;
+    border-color: #333;
+}
+
+nav.dark-theme ul {
+    background-color: #333;
+    border-color: #444;
+}
+
+nav.dark-theme ul li a:hover, nav.dark-theme ul li a.selected {
+    background-color: #555;
+}
+
+aside.dark-theme {
+    background-color: #333333;
+}
+
+section.dark-theme {
+    background-color: #1e1e1e;
+}
+
+body.dark-theme .toggle-aside-btn {
+    background-color: #333;
+}
+
+body.dark-theme .toggle-aside-btn:hover {
+    background-color: #555;
+}
+
+body.dark-theme nav ul li a {
+    color: #e0e0e0;
 }
 
 @media (min-width: 0px) {

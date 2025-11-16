@@ -5,3 +5,11 @@
 .update {
     margin-bottom: 25px;
 }
+
+body.dark-theme .update-header {
+    color: #e0e0e0;
+}
+
+body.dark-theme .update {
+    color: #e0e0e0;
+}

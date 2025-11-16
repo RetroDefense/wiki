@@ -11,8 +11,10 @@
     color: #0066cc;
     font-size: 1.125rem;
     transition: transform 150ms ease;
-        background-color: #ffffff;
-    padding: 5px;
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #f1f1f1;
 }
 
 .game-card:hover {
@@ -20,13 +22,21 @@
 }
 
 .game-card img {
-    border: #000 solid 1px;
+    border: #f1f1f1 solid 1px;
     width: 150px;
     height: 150px;
     object-fit: contain;
-    margin-bottom: 10px;
+    margin: 0 auto 15px auto;
     background-color: rgba(0, 0, 0, 0.1);
     pointer-events: none;
+    display: block;
+    padding: 5px;
+}
+
+.game-card p {
+    margin: 0;
+    padding: 0 5px;
+    word-wrap: break-word;
 }
 
 @media (min-width: 300px) {
@@ -51,4 +61,9 @@
     .games-grid {
         grid-template-columns: repeat(5, 1fr);
     }
+}
+
+body.dark-theme .game-card {
+    background-color: #333;
+    color: #e0e0e0;
 }

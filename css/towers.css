@@ -287,6 +287,100 @@ th {
     border: 1px solid #ddd;
 }
 
+body.dark-theme .tab {
+    border: 1px solid #444;
+    background-color: #333;
+    color: #e0e0e0;
+}
+
+body.dark-theme .tab:hover {
+    background-color: #555;
+}
+
+body.dark-theme .tab.active {
+    background-color: #444;
+    font-weight: bold;
+}
+
+body.dark-theme .tab-content {
+    border: 1px solid #444;
+    background-color: #222;
+    color: #e0e0e0;
+}
+
+body.dark-theme table {
+    border: 1px solid #444;
+    background-color: #333;
+    color: #e0e0e0;
+}
+
+body.dark-theme th, body.dark-theme td {
+    border: 1px solid #555;
+}
+
+body.dark-theme th {
+    background-color: #444;
+}
+
+body.dark-theme .inner-tab {
+    background-color: #333;
+    border: 1px solid #444;
+    color: #e0e0e0;
+}
+
+body.dark-theme .inner-tab:hover {
+    background-color: #555;
+}
+
+body.dark-theme .inner-tab.active {
+    background-color: #444;
+    font-weight: bold;
+}
+
+body.dark-theme .inner-tab-content {
+    border: 1px solid #444;
+    background-color: #222;
+    color: #e0e0e0;
+}
+
+body.dark-theme .ability-box {
+    border: 1px solid #444;
+    background-color: #333;
+    color: #e0e0e0;
+}
+
+body.dark-theme .tower-box {
+    border: 2px solid #444;
+    background-color: #333;
+    color: #e0e0e0;
+}
+
+body.dark-theme .tower-image-box {
+    border: 4px solid #666;
+    background-color: #222;
+}
+
+body.dark-theme .tower-description-box {
+    border: 4px solid #666;
+    background-color: #222;
+}
+
+body.dark-theme .tower-cost-box {
+    border: 1px solid #444;
+    background-color: #444;
+    color: #e0e0e0;
+}
+
+body.dark-theme .tower-cost {
+    color: #e0e0e0;
+}
+
+body.dark-theme .level-requirement {
+    background-color: #444;
+    color: #e0e0e0;
+    border: 1px solid #444;
+}
+
 .ability-unlock-box {
     margin-top: 10px;
 }
