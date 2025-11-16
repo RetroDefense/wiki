@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/enemies.css">
+    <link rel="stylesheet" href="css/towers.css">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <title>Retro Defense Wiki</title>
+</head>
+
+<body>
+    <header>
+        <img src="img/banner.png" alt="Retro Defense Banner" class="banner">
+        <div class="play-rd-container">
+            <a href="https://www.roblox.com/games/6947076261" target="_blank" class="play-rd-btn">Play Retro Defense ></a>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            |
+            <li><a href="towers.html">Towers</a></li>
+            |
+            <li><a href="enemies.html" class="selected">Enemies</a></li>
+            |
+            <li><a href="#">Maps</a></li>
+            |
+            <li><a href="#">Modes</a></li>
+            |
+            <li><a href="#">Modifiers</a></li>
+            |
+            <li><a href="codes.html">Codes</a></li>
+            |
+            <li><a href="updatelog.html">Update Log</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section class="content">
+            <div class="tabber">
+                <div class="tabs">
+                    <div class="tab active" data-tab="Easy Mode">Easy Mode</div>
+                    <div class="tab" data-tab="Medium Mode">Medium Mode</div>
+                </div>
+                <div class="tab-content active" id="Easy Mode">
+                    <div class="games-grid">
+                        <div class="game-card"
+                             data-description="<h3>Description:</h3><hr> A basic starting enemy with low health and no special abilities. It serves as an introductory challenge in the early game.<br><br><h3>Strategy:</h3><hr> This unit can be countered effectively by towers with good fire rate and range, such as Recruits. Splash damage towers like Paintballer and Bomber are less effective early on due to the spacing of these units.<br><br><h3>Trivia:</h3><hr><ul><li>Rebels are the first enemies to appear in Easy Mode.</li></ul>"
+                             data-health="8"
+                             data-speed="3.5"
+                             data-shield=""
+                             data-defense=""
+                             data-extra="">
+                            <img src="img/favicon.png" alt="Rebel">
+                            <h4>Rebel</h4>
+                        </div>
+                        <div class="game-card" 
+                             data-description="<h3>Description:</h3><hr> A fast-moving early game enemy with lower health than Rebels. It prioritizes speed over durability.<br><br><h3>Strategy:</h3><hr> Towers with high fire rates or long ranges are effective counters to this unit, as they can mitigate its speed advantage.<br><br><h3>Trivia:</h3><hr><ul><li>In Easy Mode with the Buffed Waves modifier, Fast Rebels appear alongside Rebels on Wave 1.</li></ul>"
+                             data-health="6"
+                             data-speed="5.775"
+                             data-shield=""
+                             data-defense=""
+                             data-extra="">
+                            <img src="img/favicon.png" alt="Fast Rebel">
+                            <h4>Fast Rebel</h4>
+                        </div>
+                        <div class="game-card" 
+                             data-description="<h3>Description:</h3><hr> A relatively bulky early game enemy that requires a small investment in damage-dealing towers to defeat.<br><br><h3>Strategy:</h3><hr> By the time this unit appears, players are expected to have upgraded or placed additional towers to handle it effectively.<br><br><h3>Trivia:</h3><hr><ul><li>TBA</li></ul>"
+                             data-health="25"
+                             data-speed="2.8"
+                             data-shield=""
+                             data-defense=""
+                             data-extra="">
+                            <img src="img/favicon.png" alt="Infected">
+                            <h4>Infected</h4>
+                        </div>
+                        <div class="game-card" 
+                             data-description="<h3>Description:</h3><hr> A slow but durable early game enemy that tests the player's ability to produce sufficient DPS. Its slow speed makes it manageable despite its high health.<br><br><h3>Strategy:</h3><hr> Players should ensure they have enough DPS on the map by the time this unit appears. Upgraded towers or additional placements are recommended.<br><br><h3>Trivia:</h3><hr><ul><li>TBA</li></ul>"
+                             data-health="100"
+                             data-speed="2"
+                             data-shield=""
+                             data-defense=""
+                             data-extra="">
+                            <img src="img/favicon.png" alt="Rebel Leader">
+                            <h4>Rebel Leader</h4>
+                        </div>
+                        <div class="game-card" 
+                             data-description="<h3>Description:</h3><hr> An enemy that explodes upon death, stunning nearby towers within a 10-stud radius for 3 seconds.<br><br><h3>Strategy:</h3><hr> Proper tower placement is crucial to avoid grouping towers in a way that makes them vulnerable to the explosion. Units with stun immunity, such as 3-X Swordsman, are effective counters.<br><br><h3>Trivia:</h3><hr><ul><li>Explosive Infected was previously named Suicide Infected, changed in Beta 5.0.17.</li><li>Uses the Dynamo's Bandolier accessory, renamed to <Power Cell Bandolier.</li></ul>"
+                             data-health="20"
+                             data-speed="4.2"
+                             data-shield=""
+                             data-defense=""
+                             data-extra="On death, explode in a 10 stud radius and stun for 3 seconds.">
+                            <img src="img/favicon.png" alt="Explosive Infected">
+                            <h4>Explosive Infected</h4>
+                        </div>
+                        <div class="game-card"
+                             data-description="<h3>Description:</h3><hr> An enemy with a shield that must be depleted before its health can be damaged. The shield acts as a secondary health bar.<br><br><h3>Strategy:</h3><hr> Towers with high fire rates, such as Recruits or Swordsman, are effective against this unit. High-damage, slow-firing towers struggle due to the shield mechanic.<br><br><h3>Trivia:</h3><hr><ul><li>TBA</li></ul>"
+                             data-health="35"
+                             data-speed="3.2"
+                             data-shield="30"
+                             data-defense=""
+                             data-extra="">
+                            <img src="img/favicon.png" alt="Shielded Rebel">
+                            <h4>Shielded Rebel</h4>
+                        </div>
+                        <div class="game-card"
+                             data-description="<h3>Description:</h3><hr> A slow but very durable enemy that takes 25% less damage from non-defense-ignoring sources.<br><br><h3>Strategy:</h3><hr> Players should ensure they have sufficient DPS to handle this unit. By the time it appears, players are expected to have towers capable of dealing with its high health and defense.<br><br><h3>Trivia:</h3><hr><ul><li>Infected Giants are the slowest non-boss enemies in the game.</li></ul>"
+                             data-health="650"
+                             data-speed="1.5"
+                             data-shield=""
+                             data-defense="25%"
+                             data-extra="">
+                            <img src="img/favicon.png" alt="Infected Giant">
+                            <h4>Infected Giant</h4>
+                        </div>
+                        <div class="game-card"
+                             data-description="<h3>Description:</h3><hr> A moderately fast enemy that spawns an Infected Child upon death, effectively giving it two health bars.<br><br><h3>Strategy:</h3><hr> Towers with high DPS and fast fire rates, such as Recruits or Bottom Path Sharpshooters, are recommended to handle this unit.<br><br><h3>Trivia:</h3><hr><ul><li>TBA</li></ul>"
+                             data-health="150"
+                             data-speed="4"
+                             data-shield=""
+                             data-defense=""
+                             data-extra="Summons an Infected Child on death.">
+                            <img src="img/favicon.png" alt="Infected Parent">
+                            <h4>Infected Parent</h4>
+                        </div>
+                        <div class="game-card"
+                             data-description="<h3>Description:</h3><hr> An extremely fast enemy with low health that spawns when an Infected Parent dies. It poses a significant threat due to its speed.<br><br><h3>Strategy:</h3><hr> Towers with good range and fire rates, such as Recruits or Bottom Path Sharpshooters, are effective counters. Barracks can also help by spawning units to block its path.<br><br><h3>Trivia:</h3><hr><ul><li>Infected Children are the fastest enemies in the game.</li></ul>"
+                             data-health="50"
+                             data-speed="6.5"
+                             data-shield=""
+                             data-defense=""
+                             data-extra="">
+                            <img src="img/favicon.png" alt="Infected Child">
+                            <h4>Infected Child</h4>
+                        </div>
+                        <div class="game-card"
+                             data-description="<h3>Description:</h3><hr> A Relatively bulky enemy that requires good DPS to take down. They are primarily used as a source of income in the mid-game.<br><br><h3>Strategy:</h3><hr> By the time these units appear, they are no longer a significant threat. Players should focus on maintaining consistent DPS to eliminate them efficiently.<br><br><h3>Trivia:</h3><hr><ul><li>TBA</li></ul>"
+                             data-health="300"
+                             data-speed="4.2"
+                             data-shield=""
+                             data-defense=""
+                             data-extra="">
+                            <img src="img/favicon.png" alt="Infected Recruit">
+                            <h4>Infected Recruit</h4>
+                        </div>
+                        <div class="game-card"
+                             data-description="<h3>Description:</h3><hr> A durable enemy capable of summoning additional units, such as Infected and Fast Infected. These summoned units have slightly higher health but lower speed compared to their Rebel counterparts.<br><br><h3>Strategy:</h3><hr> Splash damage towers, such as Paintballer or Mortar, are highly effective> against this unit due to its summoning ability.<br><br><h3>Trivia:</h3><hr><ul><li>TBA</li></ul><br><h3>Abilities:</h3><hr><ul><li>Summon: Alternates between summoning 4 Undead, 2 Undead and 2 Fast Undead, or 5 Fast Undead.</li></ul>"
+                             data-health="450"
+                             data-speed="1.7"
+                             data-shield=""
+                             data-defense=""
+                             data-extra="Summons every 30 seconds.">
+                            <img src="img/favicon.png" alt="Necromancer">
+                            <h4>Necromancer</h4>
+                        </div>
+                        <div class="game-card"
+                             data-description="<h3>Description:</h3><hr> A summoned enemy that resembles the Rebel but has slightly higher health and lower speed.<br><br><h3>Strategy:</h3><hr> These units often appear in groups, making them vulnerable to splash damage towers like Paintballer. Players should focus on area-of-effect damage to handle them efficiently.<br><br><h3>Trivia:</h3><hr><ul><li>This unit was previously the Normal enemy in the legacy mode.</li></ul>"
+                             data-health="10"
+                             data-speed="3.3"
+                             data-shield=""
+                             data-defense=""
+                             data-extra="">
+                            <img src="img/favicon.png" alt="Undead">
+                            <h4>Undead</h4>
+                        </div>
+                        <div class="game-card"
+                             data-description="<h3>Description:</h3><hr> A summoned enemy similar to the Fast Rebel but with higher speed and slightly more health.<br><br><h3>Strategy:</h3><hr> These units are weak to splash damage towers like Paintballer. Despite their speed, their low health makes them manageable with proper defenses.<br><br><h3>Trivia:</h3><hr><ul><li>This unit was previously the Fast enemy in the legacy mode.</li></ul>"
+                             data-health="8"
+                             data-speed="5.1"
+                             data-shield=""
+                             data-defense=""
+                             data-extra="">
+                            <img src="img/favicon.png" alt="Fast Undead">
+                            <h4>Fast Undead</h4>
+                        </div>
+                        <div class="game-card"
+                             data-description="<h3>Description:</h3><hr> A unique enemy whose speed increases as its health decreases, making it a significant threat when near death.<br><br><h3>Strategy:</h3><hr> Towers with high single-hit damage or fast fire rates are effective counters. Placing units at the rear of the map can help handle leaks caused by this enemy's speed.<br><br><h3>Trivia:</h3><hr><ul><li>This enemy was designed by the community member Nobb and added in Beta 5.0.</li></ul>"
+                             data-health="100"
+                             data-speed="2.9*"
+                             data-shield=""
+                             data-defense=""
+                             data-extra="Enemy speed scales with lost health. ((Max Health - Health)0.25)+2.9">
+                            <img src="img/favicon.png" alt="Worried Infected">
+                            <h4>Worried Infected</h4>
+                        </div>
+                        <div class="game-card"
+                             data-description="<h3>Description:</h3><hr> The bulkiest non-boss enemy in the game, with a 10% damage reduction from all non-defense-ignoring sources. Its slow speed is its only weakness.<br><br><h3>Strategy:</h3><hr> Towers with hidden detection are essential to counter this enemy in Easy Mode. High DPS towers, such as Sharpshooters or top-path Wizards, are recommended.<br><br><h3>Trivia:</h3><hr><ul><li>Hazmat Infected are always hidden in Easy Mode unless spawned by Patient Zero.</li></ul>"
+                             data-health="2250"
+                             data-speed="2"
+                             data-shield=""
+                             data-defense="10%"
+                             data-extra="">
+                            <img src="img/favicon.png" alt="Hazmat Infected">
+                            <h4>Hazmat Infected</h4>
+                        </div>
+                        <div class="game-card"
+                             data-description="<h3>Description:</h3><hr> The final boss of Easy Mode, featuring a massive health pool, 25% damage resistance, and multiple abilities to overwhelm defenses.<br><br><h3>Strategy:</h3><hr> Players should avoid concentrating defenses at the start of the map to mitigate the effects of its Sword Smash ability. Focus on high DPS towers and percentage-based damage effects to counter its large health pool.<br><br><h3>Trivia:</h3><hr><ul><li>Patient Zero is inspired by the enemy of the same name from Tower Battles' infamous Wave 0000000 (0x7).</li><li>Patient Zero is the slowest enemy in the game.</li></ul><br><h3>Abilities:</h3><hr><ul><li>Sword Smash: Stuns towers in a 20-stud radius for 8 seconds.</li><li>Calculated Infection: Stuns the highest DPS tower in a 30-stud radius for 15 seconds.</li><li>Summon: Cycles between summoning Hazmat Infected, Shielded Rebels, Worried Infected, Infected Giants, and Necromancers.</li></ul>"
+                             data-health="40000"
+                             data-speed="1"
+                             data-shield=""
+                             data-defense="25%"
+                             data-extra=" Does a Sword Smash 5 seconds after spawning. Loops the following: Wait 50s, Summon, Wait 50s, Calculated Infection, Wait 50s, Sword Smash.">
+                            <img src="img/favicon.png" alt="Patient Zero">
+                            <h4>Patient Zero</h4>
+                        </div>
+                    </div>
+                    <div id="enemy-details" class="hidden">
+                        <img id="enemy-image" src="" alt="Enemy Image">
+                        <div id="enemy-description"></div>
+                        <div id="enemy-stats" class="stats-box hidden">
+                            <div class="stat" id="stat-health">Health: <span></span></div>
+                            <div class="stat" id="stat-speed">Speed: <span></span></div>
+                            <div class="stat" id="stat-shield">Shield: <span></span></div>
+                            <div class="stat" id="stat-defense">Defense: <span></span></div>
+                            <div class="stat" id="stat-extra">Extra Info: <span></span></div>
+                        </div>
+                        <button id="close-details">Close</button>
+                    </div>
+                </div>
+                <div class="tab-content" id="Medium Mode"> Coming SOON  
+                    <div class="games-grid"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="./js/main.js"></script>
+    <script src="./js/enemies.js"></script>
+    <script src="./js/towers.js"></script>
+</body>
+</html>

@@ -2,7 +2,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
-    gap: 10px;
+    gap: 15px;
 }
 
 .game-card {
@@ -10,6 +10,13 @@
     text-decoration: none;
     color: #0066cc;
     font-size: 1.125rem;
+    transition: transform 150ms ease;
+        background-color: #ffffff;
+    padding: 5px;
+}
+
+.game-card:hover {
+    transform: scale(1.2);
 }
 
 .game-card img {
