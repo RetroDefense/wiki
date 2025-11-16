@@ -20,6 +20,7 @@
     </header>
     <nav>
         <ul>
+            <li><button id="toggle-aside" class="toggle-aside-btn">☰</button></li>
             <li><a href="index.html">Home</a></li>
             |
             <li><a href="towers.html">Towers</a></li>
@@ -38,6 +39,26 @@
         </ul>
     </nav>
     <main>
+        <aside id="aside-section">
+            <h3>About</h3>
+            <ul>
+                <li><a href="updatelog.html">Recent changes</a></li>
+            </ul>
+
+            <div class="theme-switch-container">
+                <span>Dark Theme</span><br>
+                <label class="switch">
+                    <input type="checkbox" id="toggle-theme">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+
+            <div class="aside-footer">
+                <small>Maintained by the community<br>
+                    <a href="CONTRIBUTING.md">Help improve it</a>
+                </small>
+            </div>
+        </aside>
         <section class="content">
             <div class="tabber">
                 <div class="tabs">

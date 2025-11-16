@@ -13,14 +13,19 @@ function applyTheme(theme) {
 const savedTheme = localStorage.getItem('theme') || 'light';
 applyTheme(savedTheme);
 
-themeToggleButton.checked = savedTheme === 'dark';
+// If the theme toggle exists on the page, initialize and wire it
+if (themeToggleButton) {
+    themeToggleButton.checked = savedTheme === 'dark';
+    themeToggleButton.addEventListener('change', () => {
+        const newTheme = themeToggleButton.checked ? 'dark' : 'light';
+        applyTheme(newTheme);
+        localStorage.setItem('theme', newTheme);
+    });
+}
 
-toggleButton.addEventListener('click', () => {
-    aside.classList.toggle('open');
-});
-
-themeToggleButton.addEventListener('change', () => {
-    const newTheme = themeToggleButton.checked ? 'dark' : 'light';
-    applyTheme(newTheme);
-    localStorage.setItem('theme', newTheme);
-});
+// Wire the aside toggle only if both elements exist
+if (toggleButton && aside) {
+    toggleButton.addEventListener('click', () => {
+        aside.classList.toggle('open');
+    });
+}

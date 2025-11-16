@@ -22,3 +22,23 @@ tr {
 tr:hover {
     background-color: #FFFFE0;
 }
+
+body.dark-theme table,
+body.dark-theme td,
+body.dark-theme th {
+    border: #444 solid 1px;
+}
+
+body.dark-theme th {
+    background-color: #444;
+    color: #e0e0e0;
+}
+
+body.dark-theme tr {
+    background-color: #222;
+    color: #e0e0e0;
+}
+
+body.dark-theme tr:hover {
+    background-color: #333;
+}

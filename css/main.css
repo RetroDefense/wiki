@@ -97,7 +97,8 @@ aside {
     padding: 20px;
     border-radius: 10px;
     display: block;
-    background-color: rgb(180, 180, 180);
+    background-color: #6d9bc4;
+    color: white;
     flex: 1;
     z-index: 3;
     transition: left 0.5s ease;
@@ -109,6 +110,7 @@ aside.open {
 
 aside h3 {
     margin-top: 0;
+    color: white;
 }
 
 aside ul {
@@ -118,7 +120,48 @@ aside ul {
 
 aside ul li a {
     text-decoration: none;
-    color: #0066cc;
+    color: #ffffff;
+    transition: color 0.3s ease;
+}
+
+aside ul li a:hover {
+    color: #e0e0e0;
+}
+
+body.dark-theme aside ul li a {
+    color: #e0e0e0;
+}
+
+body.dark-theme aside ul li a:hover {
+    color: #ffffff;
+}
+
+/* Aside meta / recent panel styling */
+.aside-meta {
+    margin-top: 12px;
+}
+.aside-meta .meta-list {
+    list-style: none;
+    padding: 0;
+    margin: 6px 0;
+}
+.aside-meta .meta-list li {
+    margin-bottom: 8px;
+    font-size: 0.95rem;
+}
+.aside-meta .meta-list li a {
+    color: rgba(255,255,255,0.95);
+    text-decoration: none;
+}
+.aside-meta .meta-note {
+    font-size: 0.85rem;
+    color: rgba(255,255,255,0.85);
+    margin-top: 8px;
+}
+.aside-footer {
+    margin-top: 12px;
+    font-size: 0.8rem;
+    color: rgba(255,255,255,0.85);
 }
 
 section {
@@ -225,12 +268,12 @@ nav.dark-theme ul li a:hover, nav.dark-theme ul li a.selected {
 }
 
 aside.dark-theme {
-    background-color: #1e1e1e;
+    background-color: #333333;
 }
 
 section.dark-theme {
     background-color: #1e1e1e;
-} /*start here*/
+}
 
 body.dark-theme .toggle-aside-btn {
     background-color: #333;
@@ -238,6 +281,10 @@ body.dark-theme .toggle-aside-btn {
 
 body.dark-theme .toggle-aside-btn:hover {
     background-color: #555;
+}
+
+body.dark-theme nav ul li a {
+    color: #e0e0e0;
 }
 
 @media (min-width: 0px) {
