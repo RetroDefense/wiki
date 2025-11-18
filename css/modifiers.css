@@ -1,0 +1,11 @@
+summary {
+    font-size: 1.25rem;
+}
+
+details[open] summary {
+    font-weight: bold;
+}
+
+.games-grid {
+    margin: 25px;
+}
