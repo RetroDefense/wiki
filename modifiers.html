@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/home.css">
-    <link rel="stylesheet" href="css/modifiers.css">
+    <link rel="stylesheet" href="css/enemies.css">
+    <link rel="stylesheet" href="css/towers.css">
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
     <title>Modifiers | Retro Defense Wiki</title>
 </head>
@@ -42,18 +43,6 @@
     <main>
         <aside id="aside-section">
             <h3>Browse</h3>
-            <ul>
-                <li><a href="towers/recruit.html">Recruit</a></li>
-                <li><a href="towers/sharpshooter.html">Sharpshooter</a></li>
-                <li><a href="towers/bomber.html">Bomber</a></li>
-                <li><a href="towers/swordsman.html">Swordsman</a></li>
-                <li><a href="towers/paintballer.html">Paintballer</a></li>
-                <li><a href="towers/coder.html">Coder</a></li>
-                <li><a href="towers/mortar.html">Mortar</a></li>
-                <li><a href="towers/barracks.html">Barracks</a></li>
-                <li><a href="towers/wizard.html">Wizard</a></li>
-                <li><a href="towers/heavygunner.html">Heavy Gunner</a></li>
-            </ul>
             <div class="theme-switch-container">
                 <h3>Dark Theme</h3><br>
                 <label class="switch">
@@ -63,77 +52,156 @@
             </div>
             <div class="aside-footer">
                 <small>Maintained by the community<br>
-                    <a target="_blank" href="https://github.com/RetroDefense/wiki/blob/main/CONTRIBUTING.md">Help
-                        improve it</a>
+                    <a target="_blank" href="https://github.com/RetroDefense/wiki/blob/main/CONTRIBUTING.md">Help improve it</a>
                 </small>
             </div>
         </aside>
         <section>
-            <h2>Modifiers</h2>
-            <h4>Sorted by difficulty</h4>
-            <br>
-            <details open>
-                <summary>Easy</summary>
-                <div class="games-grid">
-                    <a href="#" class="game-card">
+            <section class="content">
+            <div class="tabber">
+                <div class="tabs">
+                    <div class="tab active" data-tab="Easy">Easy</div>
+                    <div class="tab" data-tab="Medium">Medium</div>
+                    <div class="tab" data-tab="Hard">Hard</div>
+                    <div class="tab" data-tab="Insane">Insane</div>
+                </div>
+                <div class="tab-content active" id="Easy">
+                    <div class="games-grid">
+                        <div class="game-card"
+                             data-description="<h3>Description:</h3><hr> Base HP is set to 1."
+                             data-health="+10%">
                         <img src="img/modifiers/OneLife.png" alt="One Life">
-                        <p><strong>One Life</strong></p>
-                    </a>
-                    <a href="#" class="game-card">
+                        <h4>One Life</h4>
+                        </div>
+                        <div class="game-card"
+                            data-description="<h3>Decsription:</h3><hr> Towers cannot be placed close together."
+                            data-health="+10%">
                         <img src="img/modifiers/SocialDistancing.png" alt="Social Distancing">
-                        <p><strong>Social Distancing</strong></p>
-                    </a>
+                        <h4>Social Distancing</h4>
+                        </div>
+                        <div id="enemy-details" class="hidden">
+                            <div id="enemy-image-container">
+                                <img id="enemy-image" src="" alt="Social Distancing">
+                            </div>
+                            <div id="enemy-description"></div>
+                            <div id="enemy-stats" class="stats-box hidden">
+                                <div class="stat" id="stat-health">Rewards: <span></span></div>
+                                <div class="stat" id="stat-speed">Speed: <span></span></div>
+                                <div class="stat" id="stat-shield">Shield: <span></span></div>
+                                <div class="stat" id="stat-defense">Defense: <span></span></div>
+                                <div class="stat" id="stat-extra">Extra Info: <span></span></div>
+                            </div>
+                            <button id="close-details">Close</button>
+                        </div>
+                    </div>
                 </div>
-            </details>
-            <details>
-                <summary>Medium</summary>
-                <div class="games-grid">
-                    <a href="#" class="game-card">
-                        <img src="img/modifiers/ExplosiveMayhem.png" alt="Explosive Mayhem">
-                        <p><strong>Explosive Mayhem</strong></p>
-                    </a>
-                    <a href="#" class="game-card">
+                <div class="tab-content" id="Medium">
+                    <div class="games-grid">
+                        <div class="game-card"
+                             data-description="<h3>Description:</h3><hr> All enemies have the explosive attribute."
+                             data-health="+20%">
+                        <img src="img/modifiers/ExplosiveMayhem.png" alt="Exploding Mayhem">
+                        <h4>Explosive Mayhem</h4>
+                        </div>
+                        <div class="game-card"
+                             data-description="<h3>Description:</h3><hr> Enemies are 75% faster."
+                             data-health="+20%">
                         <img src="img/modifiers/SpedUp.png" alt="Sped Up">
-                        <p><strong>Sped Up</strong></p>
-                    </a>
+                        <h4>Sped Up</h4>
+                        </div>
+                        <div id="enemy-details" class="hidden">
+                            <div id="enemy-image-container">
+                                <img id="enemy-image" src="" alt="Enemy Image">
+                            </div>
+                            <div id="enemy-description"></div>
+                            <div id="enemy-stats" class="stats-box hidden">
+                                <div class="stat" id="stat-health">Rewards: <span></span></div>
+                                <div class="stat" id="stat-speed">Speed: <span></span></div>
+                                <div class="stat" id="stat-shield">Shield: <span></span></div>
+                                <div class="stat" id="stat-defense">Defense: <span></span></div>
+                                <div class="stat" id="stat-extra">Extra Info: <span></span></div>
+                            </div>
+                            <button id="close-details">Close</button>
+                        </div>
+                    </div>
                 </div>
-            </details>
-            <details>
-                <summary>Hard</summary>
-                <div class="games-grid">
-                    <a href="#" class="game-card">
+                <div class="tab-content" id="Hard">
+                    <div class="games-grid">
+                        <div class="game-card"
+                             data-description="<h3>Description:</h3><hr> Every enemy has a shield and gain 50% more shield."
+                             data-health="+30%">
                         <img src="img/modifiers/Evolution.png" alt="Evolution">
-                        <p><strong>Evolution</strong></p>
-                    </a>
-                    <a href="#" class="game-card">
+                        <h4>Evolution</h4>
+                        </div>
+                        <div class="game-card"
+                             data-description="<h3>Description:</h3><hr> Ground towers are disabled. Place only cliff towers!"
+                             data-health="+30%">
                         <img src="img/modifiers/FloorIsLava.png" alt="Floor Is Lava">
-                        <p><strong>Floor Is Lava</strong></p>
-                    </a>
-                    <a href="#" class="game-card">
+                        <h4>Floor Is Lava</h4>
+                        </div>
+                        <div class="game-card"
+                             data-description="<h3>Description:</h3><hr> Range and cooldown are decreased by 25%."
+                             data-health="+30%">
                         <img src="img/modifiers/Impaired.png" alt="Impaired">
-                        <p><strong>Impaired</strong></p>
-                    </a>
+                        <h4>Impaired</h4>
+                        </div>
+                        <div id="enemy-details" class="hidden">
+                            <div id="enemy-image-container">
+                                <img id="enemy-image" src="" alt="Enemy Image">
+                            </div>
+                            <div id="enemy-description"></div>
+                            <div id="enemy-stats" class="stats-box hidden">
+                                <div class="stat" id="stat-health">Rewards: <span></span></div>
+                                <div class="stat" id="stat-speed">Speed: <span></span></div>
+                                <div class="stat" id="stat-shield">Shield: <span></span></div>
+                                <div class="stat" id="stat-defense">Defense: <span></span></div>
+                                <div class="stat" id="stat-extra">Extra Info: <span></span></div>
+                            </div>
+                            <button id="close-details">Close</button>
+                        </div>
+                    </div>
                 </div>
-            </details>
-            <details>
-                <summary>Insane</summary>
-                <div class="games-grid">
-                    <a href="#" class="game-card">
+                <div class="tab-content" id="Insane">
+                    <div class="games-grid">
+                        <div class="game-card"
+                             data-description="<h3>Description:</h3><hr> The selected mode is now much harder."
+                             data-health="+50%">
                         <img src="img/modifiers/BuffedWaves.png" alt="Buffed Waves">
-                        <p><strong>Buffed Waves</strong></p>
-                    </a>
-                    <a href="#" class="game-card">
+                        <h4>Buffed Waves</h4>
+                        </div>
+                        <div class="game-card"
+                             data-description="<h3>Description:</h3><hr> Placement and upgrade costs are increased by 50%"
+                             data-health="+50%">
                         <img src="img/modifiers/Inflation.png" alt="Inflation">
-                        <p><strong>Inflation</strong></p>
-                    </a>
-                    <a href="#" class="game-card">
+                        <h4>Inflation</h4>
+                        </div>
+                        <div class="game-card"
+                             data-description="<h3>Description:</h3><hr> All enemies are hidden."
+                             data-health="+50%">
                         <img src="img/modifiers/Invisible.png" alt="Invisible">
-                        <p><strong>Invisible</strong></p>
-                    </a>
+                        <h4>Invisible</h4>
+                        </div>
+                        <div id="enemy-details" class="hidden">
+                            <div id="enemy-image-container">
+                                <img id="enemy-image" src="" alt="Enemy Image">
+                            </div>
+                            <div id="enemy-description"></div>
+                            <div id="enemy-stats" class="stats-box hidden">
+                                <div class="stat" id="stat-health">Rewards: <span></span></div>
+                                <div class="stat" id="stat-speed">Speed: <span></span></div>
+                                <div class="stat" id="stat-shield">Shield: <span></span></div>
+                                <div class="stat" id="stat-defense">Defense: <span></span></div>
+                                <div class="stat" id="stat-extra">Extra Info: <span></span></div>
+                            </div>
+                            <button id="close-details">Close</button>
+                        </div>
+                    </div>
                 </div>
-            </details>
-            <script src="./js/main.js"></script>
         </section>
+    </main>
+    <script src="./js/main.js"></script>
+    <script src="./js/enemies.js"></script>
+    <script src="./js/towers.js"></script>
 </body>
 
 </html>
