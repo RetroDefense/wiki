@@ -99,7 +99,10 @@
                     <div class="games-grid">
                         <div class="game-card"
                              data-description="<h3>Description:</h3><hr> All enemies have the explosive attribute."
-                             data-health="+20%">
+                             data-health="+20%"
+                             data-shield="8"
+                             data-defense="2s"
+                             data-extra="Explosive Infected still use their original stats.">
                         <img src="img/modifiers/ExplosiveMayhem.png" alt="Exploding Mayhem">
                         <h4>Explosive Mayhem</h4>
                         </div>
@@ -117,8 +120,8 @@
                             <div id="enemy-stats" class="stats-box hidden">
                                 <div class="stat" id="stat-health">Rewards: <span></span></div>
                                 <div class="stat" id="stat-speed">Speed: <span></span></div>
-                                <div class="stat" id="stat-shield">Shield: <span></span></div>
-                                <div class="stat" id="stat-defense">Defense: <span></span></div>
+                                <div class="stat" id="stat-shield">Explosion Radius: <span></span></div>
+                                <div class="stat" id="stat-defense">Stun Duration: <span></span></div>
                                 <div class="stat" id="stat-extra">Extra Info: <span></span></div>
                             </div>
                             <button id="close-details">Close</button>
@@ -129,7 +132,8 @@
                     <div class="games-grid">
                         <div class="game-card"
                              data-description="<h3>Description:</h3><hr> Every enemy has a shield and gain 50% more shield."
-                             data-health="+30%">
+                             data-health="+30%"
+                             data-shield="(shield * 2) + 1">
                         <img src="img/modifiers/Evolution.png" alt="Evolution">
                         <h4>Evolution</h4>
                         </div>
@@ -153,7 +157,7 @@
                             <div id="enemy-stats" class="stats-box hidden">
                                 <div class="stat" id="stat-health">Rewards: <span></span></div>
                                 <div class="stat" id="stat-speed">Speed: <span></span></div>
-                                <div class="stat" id="stat-shield">Shield: <span></span></div>
+                                <div class="stat" id="stat-shield">Shield Equation: <span></span></div>
                                 <div class="stat" id="stat-defense">Defense: <span></span></div>
                                 <div class="stat" id="stat-extra">Extra Info: <span></span></div>
                             </div>
